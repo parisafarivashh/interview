@@ -1,0 +1,1295 @@
+{
+	"info": {
+		"_postman_id": "e99bb763-8213-48c1-9c25-3680a7d616ff",
+		"name": "zibal_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20748498",
+		"_collection_link": "https://cloudy-rocket-454604.postman.co/workspace/Team-Workspace~67da9144-8f8c-4de1-8cf9-55d8b9f23aeb/collection/20748498-e99bb763-8213-48c1-9c25-3680a7d616ff?action=share&source=collection_link&creator=20748498"
+	},
+	"item": [
+		{
+			"name": "v1 get report",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "count",
+							"type": "text"
+						},
+						{
+							"key": "mode",
+							"value": "monthly",
+							"type": "text"
+						},
+						{
+							"key": "merchant_id",
+							"value": "63a69a2d18f9347bd89d5f5c",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/report",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"report"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "v1  count daily of merchant id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "daily",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v1/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:19:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12886"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"value\": 8,\n        \"key\": \"1402/10/1\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/10/10\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/11\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/12\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/10/13\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/14\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/15\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/10/16\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/10/17\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/18\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/19\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/2\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/10/20\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/10/21\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/22\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/10/23\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/10/24\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/10/25\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/10/26\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/27\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/10/28\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1402/10/29\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/3\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/30\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/10/31\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/4\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/5\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/10/6\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/7\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/10/8\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/10/9\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/1\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/11/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/11\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/12\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/11/13\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/14\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/11/15\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/16\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/17\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/11/18\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/19\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/11/2\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/11/20\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/11/21\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/11/22\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/11/23\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/24\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/25\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/26\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/27\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/11/28\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/11/29\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/3\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/30\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/4\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/5\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/6\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/11/7\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/11/8\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/11/9\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/12/1\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/12/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/12/11\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/12/12\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/12/13\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/12/14\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/12/15\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/12/16\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/12/17\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/12/18\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/12/19\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/12/2\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/12/20\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/12/21\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1402/12/22\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/12/23\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/12/24\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/12/25\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/12/26\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/12/27\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/12/28\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/12/29\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/12/3\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/12/30\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/12/31\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/12/4\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/12/5\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/12/6\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/12/7\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/12/8\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/12/9\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/6/10\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/6/11\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/6/12\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/6/13\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/6/14\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/6/15\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/6/16\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/6/17\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/6/18\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/6/19\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/6/20\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/6/21\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/6/22\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/6/23\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/6/24\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/6/25\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/6/26\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/6/27\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/6/28\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/6/29\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/6/30\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/7/1\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/7/10\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/7/11\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/7/12\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/7/13\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/7/14\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/7/15\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/7/16\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1402/7/17\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/7/18\"\n    },\n    {\n        \"value\": 11,\n        \"key\": \"1402/7/19\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/7/2\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/7/20\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/7/21\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/7/22\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/7/23\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/7/24\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/7/25\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/7/26\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/7/27\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/7/28\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/7/29\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/7/3\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/7/30\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/7/31\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/7/4\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/7/5\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/7/6\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/7/7\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/7/8\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/7/9\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/8/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/8/11\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/8/12\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1402/8/13\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/8/14\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/8/15\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/8/16\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/8/17\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/8/18\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/8/19\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/8/2\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/8/20\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/8/21\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/8/22\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/8/23\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/8/24\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/8/25\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/8/26\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/8/27\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/8/28\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/8/29\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/8/3\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/8/30\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/8/31\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/8/4\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/8/5\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/8/6\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/8/7\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1402/8/8\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/8/9\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/9/1\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1402/9/10\"\n    },\n    {\n        \"value\": 11,\n        \"key\": \"1402/9/11\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/9/12\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/9/13\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/9/14\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/9/15\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/9/16\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/9/17\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/9/18\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/9/19\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/9/2\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/9/20\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1402/9/21\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/9/22\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/9/23\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/9/24\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1402/9/25\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1402/9/26\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/9/27\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/9/28\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/9/29\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/9/3\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1402/9/30\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/9/4\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1402/9/5\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1402/9/6\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1402/9/7\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1402/9/8\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1402/9/9\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/1\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/11\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/1/12\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/1/13\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/1/14\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/15\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/1/16\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/17\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/18\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/1/19\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/2\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/1/20\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/1/21\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/22\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/1/23\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/24\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/1/25\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/1/26\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/27\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/1/28\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/1/29\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/3\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/1/30\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/31\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/1/4\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/5\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/6\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/1/7\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/1/8\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/1/9\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/2/1\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/2/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/11\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/12\"\n    },\n    {\n        \"value\": 12,\n        \"key\": \"1403/2/13\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/2/14\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1403/2/15\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/16\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/17\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/2/18\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/2/19\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/2/2\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/2/20\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/21\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/2/22\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1403/2/23\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/2/24\"\n    },\n    {\n        \"value\": 11,\n        \"key\": \"1403/2/25\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/2/26\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/27\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/2/28\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/2/29\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/2/3\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/2/4\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/2/5\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/2/6\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/2/7\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/2/8\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/2/9\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/3/1\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/3/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/3/11\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/12\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/3/13\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/14\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/3/15\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/16\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/3/17\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/18\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/3/19\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/3/2\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/3/20\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/3/21\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/3/22\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/3/23\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/3/24\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/3/25\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/26\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/3/27\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/3/28\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/3/29\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/3/3\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/30\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/3/31\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1403/3/4\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/3/5\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/3/6\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/3/7\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/3/8\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/3/9\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/4/1\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/4/10\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/11\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/4/12\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/4/13\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/4/14\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/4/15\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/4/16\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/4/17\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/4/18\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/4/19\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/4/2\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/20\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/4/21\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/22\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/4/23\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/24\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/25\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/26\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/27\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/4/28\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/4/29\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/4/3\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/4/30\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/4/4\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/4/5\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/4/6\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/4/7\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/4/8\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/4/9\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/5/1\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/5/10\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/5/11\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/5/12\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/5/13\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/5/14\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/5/15\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/5/16\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/5/17\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/5/18\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/5/19\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/5/2\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1403/5/20\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/5/21\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/5/22\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/5/23\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/5/24\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/5/25\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/5/26\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/5/27\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/5/28\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/5/29\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/5/3\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/5/30\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/5/31\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/5/4\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/5/5\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/5/6\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/5/7\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/5/8\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/5/9\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/6/1\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/6/10\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/6/11\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/6/12\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/13\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/14\"\n    },\n    {\n        \"value\": 1,\n        \"key\": \"1403/6/15\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/6/16\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/6/17\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/18\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/6/19\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/2\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/6/20\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/6/21\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/6/22\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/6/23\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/24\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/6/25\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/26\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/6/27\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/6/28\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/29\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/6/3\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/6/30\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/6/4\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/6/5\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/6/6\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/6/7\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/6/8\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/6/9\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"1403/7/1\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/7/10\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/11\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/12\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/7/13\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/14\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/7/15\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/16\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/17\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/7/18\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/7/19\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/2\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/20\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/7/21\"\n    },\n    {\n        \"value\": 8,\n        \"key\": \"1403/7/22\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/23\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/24\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/25\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/26\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/27\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/7/28\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/7/29\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/7/3\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/7/30\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/7/31\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/7/4\"\n    },\n    {\n        \"value\": 9,\n        \"key\": \"1403/7/5\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/6\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/7\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/7/8\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/7/9\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/8/1\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/8/10\"\n    },\n    {\n        \"value\": 3,\n        \"key\": \"1403/8/11\"\n    },\n    {\n        \"value\": 4,\n        \"key\": \"1403/8/12\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/8/13\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/8/2\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/8/3\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/8/4\"\n    },\n    {\n        \"value\": 5,\n        \"key\": \"1403/8/5\"\n    },\n    {\n        \"value\": 10,\n        \"key\": \"1403/8/6\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/8/7\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"1403/8/8\"\n    },\n    {\n        \"value\": 6,\n        \"key\": \"1403/8/9\"\n    }\n]"
+				},
+				{
+					"name": "v1 count weekly merchant id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "weekly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v1/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:20:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2869"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"value\": 25,\n        \"key\": \"هفته 0 سال 1403\"\n    },\n    {\n        \"value\": 32,\n        \"key\": \"هفته 1 سال 1403\"\n    },\n    {\n        \"value\": 36,\n        \"key\": \"هفته 10 سال 1403\"\n    },\n    {\n        \"value\": 38,\n        \"key\": \"هفته 11 سال 1403\"\n    },\n    {\n        \"value\": 31,\n        \"key\": \"هفته 12 سال 1403\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 13 سال 1403\"\n    },\n    {\n        \"value\": 44,\n        \"key\": \"هفته 14 سال 1403\"\n    },\n    {\n        \"value\": 35,\n        \"key\": \"هفته 15 سال 1403\"\n    },\n    {\n        \"value\": 40,\n        \"key\": \"هفته 16 سال 1403\"\n    },\n    {\n        \"value\": 49,\n        \"key\": \"هفته 17 سال 1403\"\n    },\n    {\n        \"value\": 37,\n        \"key\": \"هفته 18 سال 1403\"\n    },\n    {\n        \"value\": 30,\n        \"key\": \"هفته 19 سال 1403\"\n    },\n    {\n        \"value\": 28,\n        \"key\": \"هفته 2 سال 1403\"\n    },\n    {\n        \"value\": 32,\n        \"key\": \"هفته 20 سال 1403\"\n    },\n    {\n        \"value\": 50,\n        \"key\": \"هفته 21 سال 1403\"\n    },\n    {\n        \"value\": 43,\n        \"key\": \"هفته 22 سال 1403\"\n    },\n    {\n        \"value\": 2,\n        \"key\": \"هفته 23 سال 1402\"\n    },\n    {\n        \"value\": 29,\n        \"key\": \"هفته 23 سال 1403\"\n    },\n    {\n        \"value\": 33,\n        \"key\": \"هفته 24 سال 1402\"\n    },\n    {\n        \"value\": 31,\n        \"key\": \"هفته 24 سال 1403\"\n    },\n    {\n        \"value\": 33,\n        \"key\": \"هفته 25 سال 1402\"\n    },\n    {\n        \"value\": 45,\n        \"key\": \"هفته 25 سال 1403\"\n    },\n    {\n        \"value\": 42,\n        \"key\": \"هفته 26 سال 1402\"\n    },\n    {\n        \"value\": 37,\n        \"key\": \"هفته 26 سال 1403\"\n    },\n    {\n        \"value\": 38,\n        \"key\": \"هفته 27 سال 1402\"\n    },\n    {\n        \"value\": 38,\n        \"key\": \"هفته 27 سال 1403\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 28 سال 1402\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 28 سال 1403\"\n    },\n    {\n        \"value\": 40,\n        \"key\": \"هفته 29 سال 1402\"\n    },\n    {\n        \"value\": 41,\n        \"key\": \"هفته 29 سال 1403\"\n    },\n    {\n        \"value\": 35,\n        \"key\": \"هفته 3 سال 1403\"\n    },\n    {\n        \"value\": 48,\n        \"key\": \"هفته 30 سال 1402\"\n    },\n    {\n        \"value\": 40,\n        \"key\": \"هفته 30 سال 1403\"\n    },\n    {\n        \"value\": 29,\n        \"key\": \"هفته 31 سال 1402\"\n    },\n    {\n        \"value\": 42,\n        \"key\": \"هفته 31 سال 1403\"\n    },\n    {\n        \"value\": 43,\n        \"key\": \"هفته 32 سال 1402\"\n    },\n    {\n        \"value\": 12,\n        \"key\": \"هفته 32 سال 1403\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 33 سال 1402\"\n    },\n    {\n        \"value\": 41,\n        \"key\": \"هفته 34 سال 1402\"\n    },\n    {\n        \"value\": 48,\n        \"key\": \"هفته 35 سال 1402\"\n    },\n    {\n        \"value\": 34,\n        \"key\": \"هفته 36 سال 1402\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 37 سال 1402\"\n    },\n    {\n        \"value\": 34,\n        \"key\": \"هفته 38 سال 1402\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 39 سال 1402\"\n    },\n    {\n        \"value\": 36,\n        \"key\": \"هفته 4 سال 1403\"\n    },\n    {\n        \"value\": 37,\n        \"key\": \"هفته 40 سال 1402\"\n    },\n    {\n        \"value\": 29,\n        \"key\": \"هفته 41 سال 1402\"\n    },\n    {\n        \"value\": 41,\n        \"key\": \"هفته 42 سال 1402\"\n    },\n    {\n        \"value\": 35,\n        \"key\": \"هفته 43 سال 1402\"\n    },\n    {\n        \"value\": 36,\n        \"key\": \"هفته 44 سال 1402\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 45 سال 1402\"\n    },\n    {\n        \"value\": 31,\n        \"key\": \"هفته 46 سال 1402\"\n    },\n    {\n        \"value\": 42,\n        \"key\": \"هفته 47 سال 1402\"\n    },\n    {\n        \"value\": 41,\n        \"key\": \"هفته 48 سال 1402\"\n    },\n    {\n        \"value\": 37,\n        \"key\": \"هفته 49 سال 1402\"\n    },\n    {\n        \"value\": 40,\n        \"key\": \"هفته 5 سال 1403\"\n    },\n    {\n        \"value\": 34,\n        \"key\": \"هفته 50 سال 1402\"\n    },\n    {\n        \"value\": 27,\n        \"key\": \"هفته 51 سال 1402\"\n    },\n    {\n        \"value\": 45,\n        \"key\": \"هفته 52 سال 1402\"\n    },\n    {\n        \"value\": 7,\n        \"key\": \"هفته 53 سال 1402\"\n    },\n    {\n        \"value\": 39,\n        \"key\": \"هفته 6 سال 1403\"\n    },\n    {\n        \"value\": 35,\n        \"key\": \"هفته 7 سال 1403\"\n    },\n    {\n        \"value\": 46,\n        \"key\": \"هفته 8 سال 1403\"\n    },\n    {\n        \"value\": 29,\n        \"key\": \"هفته 9 سال 1403\"\n    }\n]"
+				},
+				{
+					"name": "v1 count monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "monthly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v1/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:21:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "571"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"value\": 1519,\n        \"key\": \"آبان 1402\"\n    },\n    {\n        \"value\": 637,\n        \"key\": \"آبان 1403\"\n    },\n    {\n        \"value\": 1470,\n        \"key\": \"آذر 1402\"\n    },\n    {\n        \"value\": 1421,\n        \"key\": \"اردیبهشت 1403\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"اسفند 1402\"\n    },\n    {\n        \"value\": 1470,\n        \"key\": \"بهمن 1402\"\n    },\n    {\n        \"value\": 1470,\n        \"key\": \"تیر 1403\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"خرداد 1403\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"دی 1402\"\n    },\n    {\n        \"value\": 1029,\n        \"key\": \"شهریور 1402\"\n    },\n    {\n        \"value\": 1470,\n        \"key\": \"شهریور 1403\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"فروردین 1403\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"مرداد 1403\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"مهر 1402\"\n    },\n    {\n        \"value\": 1519,\n        \"key\": \"مهر 1403\"\n    }\n]"
+				},
+				{
+					"name": "v1 amount monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "amount",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "monthly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v1/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:21:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "692"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"value\": 757665943800,\n        \"key\": \"آبان 1402\"\n    },\n    {\n        \"value\": 314485446900,\n        \"key\": \"آبان 1403\"\n    },\n    {\n        \"value\": 736702490000,\n        \"key\": \"آذر 1402\"\n    },\n    {\n        \"value\": 727561709400,\n        \"key\": \"اردیبهشت 1403\"\n    },\n    {\n        \"value\": 763058628200,\n        \"key\": \"اسفند 1402\"\n    },\n    {\n        \"value\": 761797440800,\n        \"key\": \"بهمن 1402\"\n    },\n    {\n        \"value\": 766553163300,\n        \"key\": \"تیر 1403\"\n    },\n    {\n        \"value\": 768442508300,\n        \"key\": \"خرداد 1403\"\n    },\n    {\n        \"value\": 782055566900,\n        \"key\": \"دی 1402\"\n    },\n    {\n        \"value\": 509623185900,\n        \"key\": \"شهریور 1402\"\n    },\n    {\n        \"value\": 733725322600,\n        \"key\": \"شهریور 1403\"\n    },\n    {\n        \"value\": 766169091200,\n        \"key\": \"فروردین 1403\"\n    },\n    {\n        \"value\": 762546431800,\n        \"key\": \"مرداد 1403\"\n    },\n    {\n        \"value\": 776964861200,\n        \"key\": \"مهر 1402\"\n    },\n    {\n        \"value\": 766128106500,\n        \"key\": \"مهر 1403\"\n    }\n]"
+				},
+				{
+					"name": "v1 amonth daily",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "amount",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "daily",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v1/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:22:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17207"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"value\": 25343328400,\n        \"key\": \"1402/10/1\"\n    },\n    {\n        \"value\": 26148971000,\n        \"key\": \"1402/10/10\"\n    },\n    {\n        \"value\": 21184169600,\n        \"key\": \"1402/10/11\"\n    },\n    {\n        \"value\": 25030464100,\n        \"key\": \"1402/10/12\"\n    },\n    {\n        \"value\": 27016550100,\n        \"key\": \"1402/10/13\"\n    },\n    {\n        \"value\": 26113240800,\n        \"key\": \"1402/10/14\"\n    },\n    {\n        \"value\": 25424042100,\n        \"key\": \"1402/10/15\"\n    },\n    {\n        \"value\": 27994505900,\n        \"key\": \"1402/10/16\"\n    },\n    {\n        \"value\": 26830673900,\n        \"key\": \"1402/10/17\"\n    },\n    {\n        \"value\": 28491649700,\n        \"key\": \"1402/10/18\"\n    },\n    {\n        \"value\": 26673001900,\n        \"key\": \"1402/10/19\"\n    },\n    {\n        \"value\": 27155982200,\n        \"key\": \"1402/10/2\"\n    },\n    {\n        \"value\": 23287007000,\n        \"key\": \"1402/10/20\"\n    },\n    {\n        \"value\": 26387100000,\n        \"key\": \"1402/10/21\"\n    },\n    {\n        \"value\": 26038222000,\n        \"key\": \"1402/10/22\"\n    },\n    {\n        \"value\": 27276530500,\n        \"key\": \"1402/10/23\"\n    },\n    {\n        \"value\": 21510817000,\n        \"key\": \"1402/10/24\"\n    },\n    {\n        \"value\": 22807451200,\n        \"key\": \"1402/10/25\"\n    },\n    {\n        \"value\": 25558392400,\n        \"key\": \"1402/10/26\"\n    },\n    {\n        \"value\": 22811704400,\n        \"key\": \"1402/10/27\"\n    },\n    {\n        \"value\": 25133527500,\n        \"key\": \"1402/10/28\"\n    },\n    {\n        \"value\": 23842283200,\n        \"key\": \"1402/10/29\"\n    },\n    {\n        \"value\": 26374619000,\n        \"key\": \"1402/10/3\"\n    },\n    {\n        \"value\": 25805746600,\n        \"key\": \"1402/10/30\"\n    },\n    {\n        \"value\": 23541836700,\n        \"key\": \"1402/10/31\"\n    },\n    {\n        \"value\": 27760511500,\n        \"key\": \"1402/10/4\"\n    },\n    {\n        \"value\": 23883068100,\n        \"key\": \"1402/10/5\"\n    },\n    {\n        \"value\": 26949191200,\n        \"key\": \"1402/10/6\"\n    },\n    {\n        \"value\": 21844576400,\n        \"key\": \"1402/10/7\"\n    },\n    {\n        \"value\": 21636032500,\n        \"key\": \"1402/10/8\"\n    },\n    {\n        \"value\": 26200370000,\n        \"key\": \"1402/10/9\"\n    },\n    {\n        \"value\": 26835187100,\n        \"key\": \"1402/11/1\"\n    },\n    {\n        \"value\": 24109544100,\n        \"key\": \"1402/11/10\"\n    },\n    {\n        \"value\": 24516583900,\n        \"key\": \"1402/11/11\"\n    },\n    {\n        \"value\": 25485069900,\n        \"key\": \"1402/11/12\"\n    },\n    {\n        \"value\": 22993125200,\n        \"key\": \"1402/11/13\"\n    },\n    {\n        \"value\": 24216591100,\n        \"key\": \"1402/11/14\"\n    },\n    {\n        \"value\": 31255325700,\n        \"key\": \"1402/11/15\"\n    },\n    {\n        \"value\": 23310051000,\n        \"key\": \"1402/11/16\"\n    },\n    {\n        \"value\": 23617328000,\n        \"key\": \"1402/11/17\"\n    },\n    {\n        \"value\": 27621086300,\n        \"key\": \"1402/11/18\"\n    },\n    {\n        \"value\": 23398445600,\n        \"key\": \"1402/11/19\"\n    },\n    {\n        \"value\": 29507361700,\n        \"key\": \"1402/11/2\"\n    },\n    {\n        \"value\": 24502521700,\n        \"key\": \"1402/11/20\"\n    },\n    {\n        \"value\": 27450807900,\n        \"key\": \"1402/11/21\"\n    },\n    {\n        \"value\": 26903082900,\n        \"key\": \"1402/11/22\"\n    },\n    {\n        \"value\": 23300623900,\n        \"key\": \"1402/11/23\"\n    },\n    {\n        \"value\": 25395201900,\n        \"key\": \"1402/11/24\"\n    },\n    {\n        \"value\": 21998466800,\n        \"key\": \"1402/11/25\"\n    },\n    {\n        \"value\": 22875806800,\n        \"key\": \"1402/11/26\"\n    },\n    {\n        \"value\": 23844042300,\n        \"key\": \"1402/11/27\"\n    },\n    {\n        \"value\": 24812234600,\n        \"key\": \"1402/11/28\"\n    },\n    {\n        \"value\": 20746460800,\n        \"key\": \"1402/11/29\"\n    },\n    {\n        \"value\": 25960605800,\n        \"key\": \"1402/11/3\"\n    },\n    {\n        \"value\": 26504696400,\n        \"key\": \"1402/11/30\"\n    },\n    {\n        \"value\": 26761910300,\n        \"key\": \"1402/11/4\"\n    },\n    {\n        \"value\": 27580784900,\n        \"key\": \"1402/11/5\"\n    },\n    {\n        \"value\": 26762897300,\n        \"key\": \"1402/11/6\"\n    },\n    {\n        \"value\": 28086385000,\n        \"key\": \"1402/11/7\"\n    },\n    {\n        \"value\": 25117077600,\n        \"key\": \"1402/11/8\"\n    },\n    {\n        \"value\": 26328134300,\n        \"key\": \"1402/11/9\"\n    },\n    {\n        \"value\": 25361813600,\n        \"key\": \"1402/12/1\"\n    },\n    {\n        \"value\": 23324084200,\n        \"key\": \"1402/12/10\"\n    },\n    {\n        \"value\": 22061582000,\n        \"key\": \"1402/12/11\"\n    },\n    {\n        \"value\": 27066303700,\n        \"key\": \"1402/12/12\"\n    },\n    {\n        \"value\": 25747708100,\n        \"key\": \"1402/12/13\"\n    },\n    {\n        \"value\": 24485604300,\n        \"key\": \"1402/12/14\"\n    },\n    {\n        \"value\": 23475946600,\n        \"key\": \"1402/12/15\"\n    },\n    {\n        \"value\": 25028647900,\n        \"key\": \"1402/12/16\"\n    },\n    {\n        \"value\": 23793885800,\n        \"key\": \"1402/12/17\"\n    },\n    {\n        \"value\": 24198429100,\n        \"key\": \"1402/12/18\"\n    },\n    {\n        \"value\": 26506268300,\n        \"key\": \"1402/12/19\"\n    },\n    {\n        \"value\": 21076179800,\n        \"key\": \"1402/12/2\"\n    },\n    {\n        \"value\": 26364465300,\n        \"key\": \"1402/12/20\"\n    },\n    {\n        \"value\": 28261828400,\n        \"key\": \"1402/12/21\"\n    },\n    {\n        \"value\": 22977162500,\n        \"key\": \"1402/12/22\"\n    },\n    {\n        \"value\": 24813418000,\n        \"key\": \"1402/12/23\"\n    },\n    {\n        \"value\": 28367562600,\n        \"key\": \"1402/12/24\"\n    },\n    {\n        \"value\": 21718418100,\n        \"key\": \"1402/12/25\"\n    },\n    {\n        \"value\": 25174165300,\n        \"key\": \"1402/12/26\"\n    },\n    {\n        \"value\": 26864541800,\n        \"key\": \"1402/12/27\"\n    },\n    {\n        \"value\": 24687314700,\n        \"key\": \"1402/12/28\"\n    },\n    {\n        \"value\": 24512970400,\n        \"key\": \"1402/12/29\"\n    },\n    {\n        \"value\": 24359941000,\n        \"key\": \"1402/12/3\"\n    },\n    {\n        \"value\": 23860967400,\n        \"key\": \"1402/12/30\"\n    },\n    {\n        \"value\": 20215965800,\n        \"key\": \"1402/12/31\"\n    },\n    {\n        \"value\": 24458851400,\n        \"key\": \"1402/12/4\"\n    },\n    {\n        \"value\": 23443633500,\n        \"key\": \"1402/12/5\"\n    },\n    {\n        \"value\": 24313941900,\n        \"key\": \"1402/12/6\"\n    },\n    {\n        \"value\": 24282800700,\n        \"key\": \"1402/12/7\"\n    },\n    {\n        \"value\": 29629236800,\n        \"key\": \"1402/12/8\"\n    },\n    {\n        \"value\": 22624989200,\n        \"key\": \"1402/12/9\"\n    },\n    {\n        \"value\": 27519391800,\n        \"key\": \"1402/6/10\"\n    },\n    {\n        \"value\": 25016879600,\n        \"key\": \"1402/6/11\"\n    },\n    {\n        \"value\": 25944852100,\n        \"key\": \"1402/6/12\"\n    },\n    {\n        \"value\": 25677448900,\n        \"key\": \"1402/6/13\"\n    },\n    {\n        \"value\": 23041624800,\n        \"key\": \"1402/6/14\"\n    },\n    {\n        \"value\": 23154676500,\n        \"key\": \"1402/6/15\"\n    },\n    {\n        \"value\": 25147397700,\n        \"key\": \"1402/6/16\"\n    },\n    {\n        \"value\": 26387325900,\n        \"key\": \"1402/6/17\"\n    },\n    {\n        \"value\": 25577494100,\n        \"key\": \"1402/6/18\"\n    },\n    {\n        \"value\": 21636418300,\n        \"key\": \"1402/6/19\"\n    },\n    {\n        \"value\": 25228650600,\n        \"key\": \"1402/6/20\"\n    },\n    {\n        \"value\": 21390453100,\n        \"key\": \"1402/6/21\"\n    },\n    {\n        \"value\": 23848085200,\n        \"key\": \"1402/6/22\"\n    },\n    {\n        \"value\": 21685432900,\n        \"key\": \"1402/6/23\"\n    },\n    {\n        \"value\": 25055484800,\n        \"key\": \"1402/6/24\"\n    },\n    {\n        \"value\": 26657442400,\n        \"key\": \"1402/6/25\"\n    },\n    {\n        \"value\": 20005903000,\n        \"key\": \"1402/6/26\"\n    },\n    {\n        \"value\": 26525535200,\n        \"key\": \"1402/6/27\"\n    },\n    {\n        \"value\": 24988791200,\n        \"key\": \"1402/6/28\"\n    },\n    {\n        \"value\": 21662705400,\n        \"key\": \"1402/6/29\"\n    },\n    {\n        \"value\": 23471192400,\n        \"key\": \"1402/6/30\"\n    },\n    {\n        \"value\": 24414405500,\n        \"key\": \"1402/7/1\"\n    },\n    {\n        \"value\": 24749345800,\n        \"key\": \"1402/7/10\"\n    },\n    {\n        \"value\": 27604993200,\n        \"key\": \"1402/7/11\"\n    },\n    {\n        \"value\": 24629536300,\n        \"key\": \"1402/7/12\"\n    },\n    {\n        \"value\": 20829132600,\n        \"key\": \"1402/7/13\"\n    },\n    {\n        \"value\": 22435699200,\n        \"key\": \"1402/7/14\"\n    },\n    {\n        \"value\": 26356387100,\n        \"key\": \"1402/7/15\"\n    },\n    {\n        \"value\": 28034215400,\n        \"key\": \"1402/7/16\"\n    },\n    {\n        \"value\": 25560657100,\n        \"key\": \"1402/7/17\"\n    },\n    {\n        \"value\": 22838717900,\n        \"key\": \"1402/7/18\"\n    },\n    {\n        \"value\": 24601163100,\n        \"key\": \"1402/7/19\"\n    },\n    {\n        \"value\": 23561119400,\n        \"key\": \"1402/7/2\"\n    },\n    {\n        \"value\": 23768181000,\n        \"key\": \"1402/7/20\"\n    },\n    {\n        \"value\": 26133995000,\n        \"key\": \"1402/7/21\"\n    },\n    {\n        \"value\": 27834869300,\n        \"key\": \"1402/7/22\"\n    },\n    {\n        \"value\": 29583450700,\n        \"key\": \"1402/7/23\"\n    },\n    {\n        \"value\": 23879253700,\n        \"key\": \"1402/7/24\"\n    },\n    {\n        \"value\": 24130347100,\n        \"key\": \"1402/7/25\"\n    },\n    {\n        \"value\": 24395777600,\n        \"key\": \"1402/7/26\"\n    },\n    {\n        \"value\": 25112470100,\n        \"key\": \"1402/7/27\"\n    },\n    {\n        \"value\": 29051321000,\n        \"key\": \"1402/7/28\"\n    },\n    {\n        \"value\": 24477713700,\n        \"key\": \"1402/7/29\"\n    },\n    {\n        \"value\": 26225519700,\n        \"key\": \"1402/7/3\"\n    },\n    {\n        \"value\": 24466836100,\n        \"key\": \"1402/7/30\"\n    },\n    {\n        \"value\": 21450376400,\n        \"key\": \"1402/7/31\"\n    },\n    {\n        \"value\": 25470247700,\n        \"key\": \"1402/7/4\"\n    },\n    {\n        \"value\": 26855528200,\n        \"key\": \"1402/7/5\"\n    },\n    {\n        \"value\": 24396011700,\n        \"key\": \"1402/7/6\"\n    },\n    {\n        \"value\": 24714477300,\n        \"key\": \"1402/7/7\"\n    },\n    {\n        \"value\": 26068628100,\n        \"key\": \"1402/7/8\"\n    },\n    {\n        \"value\": 23334484200,\n        \"key\": \"1402/7/9\"\n    },\n    {\n        \"value\": 25346489300,\n        \"key\": \"1402/8/1\"\n    },\n    {\n        \"value\": 25745258800,\n        \"key\": \"1402/8/10\"\n    },\n    {\n        \"value\": 22484468600,\n        \"key\": \"1402/8/11\"\n    },\n    {\n        \"value\": 26065863400,\n        \"key\": \"1402/8/12\"\n    },\n    {\n        \"value\": 23286874900,\n        \"key\": \"1402/8/13\"\n    },\n    {\n        \"value\": 22054350900,\n        \"key\": \"1402/8/14\"\n    },\n    {\n        \"value\": 23514275500,\n        \"key\": \"1402/8/15\"\n    },\n    {\n        \"value\": 24116289200,\n        \"key\": \"1402/8/16\"\n    },\n    {\n        \"value\": 26498737300,\n        \"key\": \"1402/8/17\"\n    },\n    {\n        \"value\": 28231237200,\n        \"key\": \"1402/8/18\"\n    },\n    {\n        \"value\": 26672619800,\n        \"key\": \"1402/8/19\"\n    },\n    {\n        \"value\": 23862204800,\n        \"key\": \"1402/8/2\"\n    },\n    {\n        \"value\": 23738160300,\n        \"key\": \"1402/8/20\"\n    },\n    {\n        \"value\": 26823087000,\n        \"key\": \"1402/8/21\"\n    },\n    {\n        \"value\": 23811259800,\n        \"key\": \"1402/8/22\"\n    },\n    {\n        \"value\": 22058547800,\n        \"key\": \"1402/8/23\"\n    },\n    {\n        \"value\": 27308800000,\n        \"key\": \"1402/8/24\"\n    },\n    {\n        \"value\": 25739973800,\n        \"key\": \"1402/8/25\"\n    },\n    {\n        \"value\": 28926149700,\n        \"key\": \"1402/8/26\"\n    },\n    {\n        \"value\": 18427625000,\n        \"key\": \"1402/8/27\"\n    },\n    {\n        \"value\": 22993861500,\n        \"key\": \"1402/8/28\"\n    },\n    {\n        \"value\": 25433434800,\n        \"key\": \"1402/8/29\"\n    },\n    {\n        \"value\": 21239533800,\n        \"key\": \"1402/8/3\"\n    },\n    {\n        \"value\": 24275072300,\n        \"key\": \"1402/8/30\"\n    },\n    {\n        \"value\": 21396171600,\n        \"key\": \"1402/8/31\"\n    },\n    {\n        \"value\": 24373523900,\n        \"key\": \"1402/8/4\"\n    },\n    {\n        \"value\": 25727537400,\n        \"key\": \"1402/8/5\"\n    },\n    {\n        \"value\": 22304334900,\n        \"key\": \"1402/8/6\"\n    },\n    {\n        \"value\": 25353782900,\n        \"key\": \"1402/8/7\"\n    },\n    {\n        \"value\": 25251415600,\n        \"key\": \"1402/8/8\"\n    },\n    {\n        \"value\": 24605002000,\n        \"key\": \"1402/8/9\"\n    },\n    {\n        \"value\": 26823825700,\n        \"key\": \"1402/9/1\"\n    },\n    {\n        \"value\": 27681846100,\n        \"key\": \"1402/9/10\"\n    },\n    {\n        \"value\": 25830132600,\n        \"key\": \"1402/9/11\"\n    },\n    {\n        \"value\": 28607926400,\n        \"key\": \"1402/9/12\"\n    },\n    {\n        \"value\": 23105064000,\n        \"key\": \"1402/9/13\"\n    },\n    {\n        \"value\": 22611640700,\n        \"key\": \"1402/9/14\"\n    },\n    {\n        \"value\": 23504938600,\n        \"key\": \"1402/9/15\"\n    },\n    {\n        \"value\": 23985409200,\n        \"key\": \"1402/9/16\"\n    },\n    {\n        \"value\": 25030729700,\n        \"key\": \"1402/9/17\"\n    },\n    {\n        \"value\": 22142179400,\n        \"key\": \"1402/9/18\"\n    },\n    {\n        \"value\": 24270253300,\n        \"key\": \"1402/9/19\"\n    },\n    {\n        \"value\": 23701916100,\n        \"key\": \"1402/9/2\"\n    },\n    {\n        \"value\": 26368098800,\n        \"key\": \"1402/9/20\"\n    },\n    {\n        \"value\": 23367702900,\n        \"key\": \"1402/9/21\"\n    },\n    {\n        \"value\": 24431731700,\n        \"key\": \"1402/9/22\"\n    },\n    {\n        \"value\": 28086795200,\n        \"key\": \"1402/9/23\"\n    },\n    {\n        \"value\": 24934047100,\n        \"key\": \"1402/9/24\"\n    },\n    {\n        \"value\": 21124460000,\n        \"key\": \"1402/9/25\"\n    },\n    {\n        \"value\": 21908491300,\n        \"key\": \"1402/9/26\"\n    },\n    {\n        \"value\": 21041341800,\n        \"key\": \"1402/9/27\"\n    },\n    {\n        \"value\": 28977248100,\n        \"key\": \"1402/9/28\"\n    },\n    {\n        \"value\": 23826106500,\n        \"key\": \"1402/9/29\"\n    },\n    {\n        \"value\": 23208501600,\n        \"key\": \"1402/9/3\"\n    },\n    {\n        \"value\": 23877044200,\n        \"key\": \"1402/9/30\"\n    },\n    {\n        \"value\": 25252702400,\n        \"key\": \"1402/9/4\"\n    },\n    {\n        \"value\": 25887866600,\n        \"key\": \"1402/9/5\"\n    },\n    {\n        \"value\": 22216183200,\n        \"key\": \"1402/9/6\"\n    },\n    {\n        \"value\": 26916303900,\n        \"key\": \"1402/9/7\"\n    },\n    {\n        \"value\": 24573442600,\n        \"key\": \"1402/9/8\"\n    },\n    {\n        \"value\": 23408560300,\n        \"key\": \"1402/9/9\"\n    },\n    {\n        \"value\": 22303747600,\n        \"key\": \"1403/1/1\"\n    },\n    {\n        \"value\": 24619162600,\n        \"key\": \"1403/1/10\"\n    },\n    {\n        \"value\": 23991080300,\n        \"key\": \"1403/1/11\"\n    },\n    {\n        \"value\": 24660454200,\n        \"key\": \"1403/1/12\"\n    },\n    {\n        \"value\": 22992487700,\n        \"key\": \"1403/1/13\"\n    },\n    {\n        \"value\": 26469087500,\n        \"key\": \"1403/1/14\"\n    },\n    {\n        \"value\": 25584557200,\n        \"key\": \"1403/1/15\"\n    },\n    {\n        \"value\": 26199508800,\n        \"key\": \"1403/1/16\"\n    },\n    {\n        \"value\": 22294859800,\n        \"key\": \"1403/1/17\"\n    },\n    {\n        \"value\": 23026797500,\n        \"key\": \"1403/1/18\"\n    },\n    {\n        \"value\": 24067350000,\n        \"key\": \"1403/1/19\"\n    },\n    {\n        \"value\": 24560211600,\n        \"key\": \"1403/1/2\"\n    },\n    {\n        \"value\": 24998369000,\n        \"key\": \"1403/1/20\"\n    },\n    {\n        \"value\": 26104660500,\n        \"key\": \"1403/1/21\"\n    },\n    {\n        \"value\": 24290938400,\n        \"key\": \"1403/1/22\"\n    },\n    {\n        \"value\": 24889861800,\n        \"key\": \"1403/1/23\"\n    },\n    {\n        \"value\": 29091944900,\n        \"key\": \"1403/1/24\"\n    },\n    {\n        \"value\": 24300678900,\n        \"key\": \"1403/1/25\"\n    },\n    {\n        \"value\": 23177556900,\n        \"key\": \"1403/1/26\"\n    },\n    {\n        \"value\": 26098380000,\n        \"key\": \"1403/1/27\"\n    },\n    {\n        \"value\": 27442995500,\n        \"key\": \"1403/1/28\"\n    },\n    {\n        \"value\": 22987225300,\n        \"key\": \"1403/1/29\"\n    },\n    {\n        \"value\": 21791547500,\n        \"key\": \"1403/1/3\"\n    },\n    {\n        \"value\": 25778158800,\n        \"key\": \"1403/1/30\"\n    },\n    {\n        \"value\": 25443957300,\n        \"key\": \"1403/1/31\"\n    },\n    {\n        \"value\": 22330197600,\n        \"key\": \"1403/1/4\"\n    },\n    {\n        \"value\": 26987157400,\n        \"key\": \"1403/1/5\"\n    },\n    {\n        \"value\": 23666050300,\n        \"key\": \"1403/1/6\"\n    },\n    {\n        \"value\": 26819848900,\n        \"key\": \"1403/1/7\"\n    },\n    {\n        \"value\": 23734516800,\n        \"key\": \"1403/1/8\"\n    },\n    {\n        \"value\": 25465740600,\n        \"key\": \"1403/1/9\"\n    },\n    {\n        \"value\": 28097584600,\n        \"key\": \"1403/2/1\"\n    },\n    {\n        \"value\": 26220140000,\n        \"key\": \"1403/2/10\"\n    },\n    {\n        \"value\": 26376292200,\n        \"key\": \"1403/2/11\"\n    },\n    {\n        \"value\": 24924549800,\n        \"key\": \"1403/2/12\"\n    },\n    {\n        \"value\": 28582836600,\n        \"key\": \"1403/2/13\"\n    },\n    {\n        \"value\": 24657314300,\n        \"key\": \"1403/2/14\"\n    },\n    {\n        \"value\": 23099441600,\n        \"key\": \"1403/2/15\"\n    },\n    {\n        \"value\": 28176050600,\n        \"key\": \"1403/2/16\"\n    },\n    {\n        \"value\": 24084388900,\n        \"key\": \"1403/2/17\"\n    },\n    {\n        \"value\": 29822712100,\n        \"key\": \"1403/2/18\"\n    },\n    {\n        \"value\": 22485850100,\n        \"key\": \"1403/2/19\"\n    },\n    {\n        \"value\": 23492269600,\n        \"key\": \"1403/2/2\"\n    },\n    {\n        \"value\": 23807195100,\n        \"key\": \"1403/2/20\"\n    },\n    {\n        \"value\": 25280753600,\n        \"key\": \"1403/2/21\"\n    },\n    {\n        \"value\": 23964613700,\n        \"key\": \"1403/2/22\"\n    },\n    {\n        \"value\": 24975108700,\n        \"key\": \"1403/2/23\"\n    },\n    {\n        \"value\": 26501301900,\n        \"key\": \"1403/2/24\"\n    },\n    {\n        \"value\": 24807453900,\n        \"key\": \"1403/2/25\"\n    },\n    {\n        \"value\": 24850565100,\n        \"key\": \"1403/2/26\"\n    },\n    {\n        \"value\": 25649860300,\n        \"key\": \"1403/2/27\"\n    },\n    {\n        \"value\": 21555368200,\n        \"key\": \"1403/2/28\"\n    },\n    {\n        \"value\": 24946672700,\n        \"key\": \"1403/2/29\"\n    },\n    {\n        \"value\": 26201426700,\n        \"key\": \"1403/2/3\"\n    },\n    {\n        \"value\": 22359629000,\n        \"key\": \"1403/2/4\"\n    },\n    {\n        \"value\": 28371157500,\n        \"key\": \"1403/2/5\"\n    },\n    {\n        \"value\": 24775052400,\n        \"key\": \"1403/2/6\"\n    },\n    {\n        \"value\": 25298281000,\n        \"key\": \"1403/2/7\"\n    },\n    {\n        \"value\": 21962186300,\n        \"key\": \"1403/2/8\"\n    },\n    {\n        \"value\": 22235652900,\n        \"key\": \"1403/2/9\"\n    },\n    {\n        \"value\": 24917821600,\n        \"key\": \"1403/3/1\"\n    },\n    {\n        \"value\": 21900666500,\n        \"key\": \"1403/3/10\"\n    },\n    {\n        \"value\": 25126911500,\n        \"key\": \"1403/3/11\"\n    },\n    {\n        \"value\": 21605312900,\n        \"key\": \"1403/3/12\"\n    },\n    {\n        \"value\": 27767608200,\n        \"key\": \"1403/3/13\"\n    },\n    {\n        \"value\": 24665043700,\n        \"key\": \"1403/3/14\"\n    },\n    {\n        \"value\": 21759217600,\n        \"key\": \"1403/3/15\"\n    },\n    {\n        \"value\": 21946389500,\n        \"key\": \"1403/3/16\"\n    },\n    {\n        \"value\": 24617158800,\n        \"key\": \"1403/3/17\"\n    },\n    {\n        \"value\": 26027828600,\n        \"key\": \"1403/3/18\"\n    },\n    {\n        \"value\": 27167926900,\n        \"key\": \"1403/3/19\"\n    },\n    {\n        \"value\": 24928792600,\n        \"key\": \"1403/3/2\"\n    },\n    {\n        \"value\": 24511405900,\n        \"key\": \"1403/3/20\"\n    },\n    {\n        \"value\": 24929343900,\n        \"key\": \"1403/3/21\"\n    },\n    {\n        \"value\": 25031639900,\n        \"key\": \"1403/3/22\"\n    },\n    {\n        \"value\": 21655468500,\n        \"key\": \"1403/3/23\"\n    },\n    {\n        \"value\": 22041459500,\n        \"key\": \"1403/3/24\"\n    },\n    {\n        \"value\": 23509365500,\n        \"key\": \"1403/3/25\"\n    },\n    {\n        \"value\": 27976506500,\n        \"key\": \"1403/3/26\"\n    },\n    {\n        \"value\": 26252532200,\n        \"key\": \"1403/3/27\"\n    },\n    {\n        \"value\": 28445565400,\n        \"key\": \"1403/3/28\"\n    },\n    {\n        \"value\": 26973973700,\n        \"key\": \"1403/3/29\"\n    },\n    {\n        \"value\": 25026481500,\n        \"key\": \"1403/3/3\"\n    },\n    {\n        \"value\": 25268005500,\n        \"key\": \"1403/3/30\"\n    },\n    {\n        \"value\": 21735787200,\n        \"key\": \"1403/3/31\"\n    },\n    {\n        \"value\": 22461456000,\n        \"key\": \"1403/3/4\"\n    },\n    {\n        \"value\": 25988656700,\n        \"key\": \"1403/3/5\"\n    },\n    {\n        \"value\": 26736098200,\n        \"key\": \"1403/3/6\"\n    },\n    {\n        \"value\": 26082441200,\n        \"key\": \"1403/3/7\"\n    },\n    {\n        \"value\": 25891515400,\n        \"key\": \"1403/3/8\"\n    },\n    {\n        \"value\": 25494127200,\n        \"key\": \"1403/3/9\"\n    },\n    {\n        \"value\": 24518669900,\n        \"key\": \"1403/4/1\"\n    },\n    {\n        \"value\": 23817937300,\n        \"key\": \"1403/4/10\"\n    },\n    {\n        \"value\": 29362186200,\n        \"key\": \"1403/4/11\"\n    },\n    {\n        \"value\": 25050319900,\n        \"key\": \"1403/4/12\"\n    },\n    {\n        \"value\": 26596123000,\n        \"key\": \"1403/4/13\"\n    },\n    {\n        \"value\": 22071652700,\n        \"key\": \"1403/4/14\"\n    },\n    {\n        \"value\": 25034973700,\n        \"key\": \"1403/4/15\"\n    },\n    {\n        \"value\": 30418778700,\n        \"key\": \"1403/4/16\"\n    },\n    {\n        \"value\": 26146947000,\n        \"key\": \"1403/4/17\"\n    },\n    {\n        \"value\": 22701431000,\n        \"key\": \"1403/4/18\"\n    },\n    {\n        \"value\": 29720500800,\n        \"key\": \"1403/4/19\"\n    },\n    {\n        \"value\": 28178257100,\n        \"key\": \"1403/4/2\"\n    },\n    {\n        \"value\": 24036058700,\n        \"key\": \"1403/4/20\"\n    },\n    {\n        \"value\": 23331780200,\n        \"key\": \"1403/4/21\"\n    },\n    {\n        \"value\": 25316987800,\n        \"key\": \"1403/4/22\"\n    },\n    {\n        \"value\": 22961373900,\n        \"key\": \"1403/4/23\"\n    },\n    {\n        \"value\": 30327335600,\n        \"key\": \"1403/4/24\"\n    },\n    {\n        \"value\": 25895480900,\n        \"key\": \"1403/4/25\"\n    },\n    {\n        \"value\": 19631520700,\n        \"key\": \"1403/4/26\"\n    },\n    {\n        \"value\": 26596017700,\n        \"key\": \"1403/4/27\"\n    },\n    {\n        \"value\": 26947075100,\n        \"key\": \"1403/4/28\"\n    },\n    {\n        \"value\": 27419560900,\n        \"key\": \"1403/4/29\"\n    },\n    {\n        \"value\": 25213326500,\n        \"key\": \"1403/4/3\"\n    },\n    {\n        \"value\": 22678229000,\n        \"key\": \"1403/4/30\"\n    },\n    {\n        \"value\": 25927730300,\n        \"key\": \"1403/4/4\"\n    },\n    {\n        \"value\": 24822886800,\n        \"key\": \"1403/4/5\"\n    },\n    {\n        \"value\": 25895783700,\n        \"key\": \"1403/4/6\"\n    },\n    {\n        \"value\": 23960034700,\n        \"key\": \"1403/4/7\"\n    },\n    {\n        \"value\": 27819160600,\n        \"key\": \"1403/4/8\"\n    },\n    {\n        \"value\": 24155042900,\n        \"key\": \"1403/4/9\"\n    },\n    {\n        \"value\": 28509416400,\n        \"key\": \"1403/5/1\"\n    },\n    {\n        \"value\": 22750347600,\n        \"key\": \"1403/5/10\"\n    },\n    {\n        \"value\": 23182479400,\n        \"key\": \"1403/5/11\"\n    },\n    {\n        \"value\": 25257199700,\n        \"key\": \"1403/5/12\"\n    },\n    {\n        \"value\": 24330382800,\n        \"key\": \"1403/5/13\"\n    },\n    {\n        \"value\": 24670786700,\n        \"key\": \"1403/5/14\"\n    },\n    {\n        \"value\": 25224052100,\n        \"key\": \"1403/5/15\"\n    },\n    {\n        \"value\": 26507610500,\n        \"key\": \"1403/5/16\"\n    },\n    {\n        \"value\": 22264301700,\n        \"key\": \"1403/5/17\"\n    },\n    {\n        \"value\": 25525646300,\n        \"key\": \"1403/5/18\"\n    },\n    {\n        \"value\": 25004794100,\n        \"key\": \"1403/5/19\"\n    },\n    {\n        \"value\": 24166670900,\n        \"key\": \"1403/5/2\"\n    },\n    {\n        \"value\": 27557051500,\n        \"key\": \"1403/5/20\"\n    },\n    {\n        \"value\": 25547870700,\n        \"key\": \"1403/5/21\"\n    },\n    {\n        \"value\": 22940129200,\n        \"key\": \"1403/5/22\"\n    },\n    {\n        \"value\": 22397124500,\n        \"key\": \"1403/5/23\"\n    },\n    {\n        \"value\": 21631775500,\n        \"key\": \"1403/5/24\"\n    },\n    {\n        \"value\": 20744986500,\n        \"key\": \"1403/5/25\"\n    },\n    {\n        \"value\": 26380968800,\n        \"key\": \"1403/5/26\"\n    },\n    {\n        \"value\": 26076943700,\n        \"key\": \"1403/5/27\"\n    },\n    {\n        \"value\": 25179705100,\n        \"key\": \"1403/5/28\"\n    },\n    {\n        \"value\": 24370444700,\n        \"key\": \"1403/5/29\"\n    },\n    {\n        \"value\": 25046728800,\n        \"key\": \"1403/5/3\"\n    },\n    {\n        \"value\": 24486641000,\n        \"key\": \"1403/5/30\"\n    },\n    {\n        \"value\": 23222738400,\n        \"key\": \"1403/5/31\"\n    },\n    {\n        \"value\": 25305967400,\n        \"key\": \"1403/5/4\"\n    },\n    {\n        \"value\": 24692022100,\n        \"key\": \"1403/5/5\"\n    },\n    {\n        \"value\": 23620298900,\n        \"key\": \"1403/5/6\"\n    },\n    {\n        \"value\": 27564177100,\n        \"key\": \"1403/5/7\"\n    },\n    {\n        \"value\": 25271750900,\n        \"key\": \"1403/5/8\"\n    },\n    {\n        \"value\": 23115418800,\n        \"key\": \"1403/5/9\"\n    },\n    {\n        \"value\": 24065183100,\n        \"key\": \"1403/6/1\"\n    },\n    {\n        \"value\": 24313845900,\n        \"key\": \"1403/6/10\"\n    },\n    {\n        \"value\": 19892081100,\n        \"key\": \"1403/6/11\"\n    },\n    {\n        \"value\": 27672591600,\n        \"key\": \"1403/6/12\"\n    },\n    {\n        \"value\": 25937400000,\n        \"key\": \"1403/6/13\"\n    },\n    {\n        \"value\": 24448945600,\n        \"key\": \"1403/6/14\"\n    },\n    {\n        \"value\": 25038394000,\n        \"key\": \"1403/6/15\"\n    },\n    {\n        \"value\": 23352765300,\n        \"key\": \"1403/6/16\"\n    },\n    {\n        \"value\": 23610179700,\n        \"key\": \"1403/6/17\"\n    },\n    {\n        \"value\": 26316797900,\n        \"key\": \"1403/6/18\"\n    },\n    {\n        \"value\": 22687713400,\n        \"key\": \"1403/6/19\"\n    },\n    {\n        \"value\": 22527899500,\n        \"key\": \"1403/6/2\"\n    },\n    {\n        \"value\": 21630879100,\n        \"key\": \"1403/6/20\"\n    },\n    {\n        \"value\": 25529845300,\n        \"key\": \"1403/6/21\"\n    },\n    {\n        \"value\": 21848496600,\n        \"key\": \"1403/6/22\"\n    },\n    {\n        \"value\": 26132783000,\n        \"key\": \"1403/6/23\"\n    },\n    {\n        \"value\": 28057031900,\n        \"key\": \"1403/6/24\"\n    },\n    {\n        \"value\": 25979233200,\n        \"key\": \"1403/6/25\"\n    },\n    {\n        \"value\": 26174801300,\n        \"key\": \"1403/6/26\"\n    },\n    {\n        \"value\": 21924755600,\n        \"key\": \"1403/6/27\"\n    },\n    {\n        \"value\": 25974636600,\n        \"key\": \"1403/6/28\"\n    },\n    {\n        \"value\": 21724619400,\n        \"key\": \"1403/6/29\"\n    },\n    {\n        \"value\": 26857866900,\n        \"key\": \"1403/6/3\"\n    },\n    {\n        \"value\": 25655566600,\n        \"key\": \"1403/6/30\"\n    },\n    {\n        \"value\": 24750382100,\n        \"key\": \"1403/6/4\"\n    },\n    {\n        \"value\": 24281192500,\n        \"key\": \"1403/6/5\"\n    },\n    {\n        \"value\": 27289723500,\n        \"key\": \"1403/6/6\"\n    },\n    {\n        \"value\": 25352454900,\n        \"key\": \"1403/6/7\"\n    },\n    {\n        \"value\": 24704724600,\n        \"key\": \"1403/6/8\"\n    },\n    {\n        \"value\": 19992532400,\n        \"key\": \"1403/6/9\"\n    },\n    {\n        \"value\": 23911933600,\n        \"key\": \"1403/7/1\"\n    },\n    {\n        \"value\": 22627734500,\n        \"key\": \"1403/7/10\"\n    },\n    {\n        \"value\": 25718682800,\n        \"key\": \"1403/7/11\"\n    },\n    {\n        \"value\": 29741516900,\n        \"key\": \"1403/7/12\"\n    },\n    {\n        \"value\": 23224787300,\n        \"key\": \"1403/7/13\"\n    },\n    {\n        \"value\": 26672657500,\n        \"key\": \"1403/7/14\"\n    },\n    {\n        \"value\": 21231983800,\n        \"key\": \"1403/7/15\"\n    },\n    {\n        \"value\": 25423501200,\n        \"key\": \"1403/7/16\"\n    },\n    {\n        \"value\": 25426992800,\n        \"key\": \"1403/7/17\"\n    },\n    {\n        \"value\": 25217285700,\n        \"key\": \"1403/7/18\"\n    },\n    {\n        \"value\": 23658457500,\n        \"key\": \"1403/7/19\"\n    },\n    {\n        \"value\": 27003808900,\n        \"key\": \"1403/7/2\"\n    },\n    {\n        \"value\": 20713845400,\n        \"key\": \"1403/7/20\"\n    },\n    {\n        \"value\": 22740378900,\n        \"key\": \"1403/7/21\"\n    },\n    {\n        \"value\": 26032177800,\n        \"key\": \"1403/7/22\"\n    },\n    {\n        \"value\": 26845584100,\n        \"key\": \"1403/7/23\"\n    },\n    {\n        \"value\": 26162281900,\n        \"key\": \"1403/7/24\"\n    },\n    {\n        \"value\": 28738302500,\n        \"key\": \"1403/7/25\"\n    },\n    {\n        \"value\": 24389385000,\n        \"key\": \"1403/7/26\"\n    },\n    {\n        \"value\": 24640104900,\n        \"key\": \"1403/7/27\"\n    },\n    {\n        \"value\": 25899059200,\n        \"key\": \"1403/7/28\"\n    },\n    {\n        \"value\": 22676918300,\n        \"key\": \"1403/7/29\"\n    },\n    {\n        \"value\": 23202299600,\n        \"key\": \"1403/7/3\"\n    },\n    {\n        \"value\": 23306812100,\n        \"key\": \"1403/7/30\"\n    },\n    {\n        \"value\": 22165618000,\n        \"key\": \"1403/7/31\"\n    },\n    {\n        \"value\": 21854134600,\n        \"key\": \"1403/7/4\"\n    },\n    {\n        \"value\": 22445147100,\n        \"key\": \"1403/7/5\"\n    },\n    {\n        \"value\": 26004835200,\n        \"key\": \"1403/7/6\"\n    },\n    {\n        \"value\": 23487231300,\n        \"key\": \"1403/7/7\"\n    },\n    {\n        \"value\": 25763643300,\n        \"key\": \"1403/7/8\"\n    },\n    {\n        \"value\": 29201004800,\n        \"key\": \"1403/7/9\"\n    },\n    {\n        \"value\": 28304824900,\n        \"key\": \"1403/8/1\"\n    },\n    {\n        \"value\": 20490459700,\n        \"key\": \"1403/8/10\"\n    },\n    {\n        \"value\": 23377859200,\n        \"key\": \"1403/8/11\"\n    },\n    {\n        \"value\": 22462130800,\n        \"key\": \"1403/8/12\"\n    },\n    {\n        \"value\": 22769882900,\n        \"key\": \"1403/8/13\"\n    },\n    {\n        \"value\": 27494329900,\n        \"key\": \"1403/8/2\"\n    },\n    {\n        \"value\": 21863650100,\n        \"key\": \"1403/8/3\"\n    },\n    {\n        \"value\": 24416172700,\n        \"key\": \"1403/8/4\"\n    },\n    {\n        \"value\": 22582182200,\n        \"key\": \"1403/8/5\"\n    },\n    {\n        \"value\": 23743931600,\n        \"key\": \"1403/8/6\"\n    },\n    {\n        \"value\": 25419723300,\n        \"key\": \"1403/8/7\"\n    },\n    {\n        \"value\": 27664540900,\n        \"key\": \"1403/8/8\"\n    },\n    {\n        \"value\": 23895758700,\n        \"key\": \"1403/8/9\"\n    }\n]"
+				},
+				{
+					"name": "v1 amount monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "amount",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "monthly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v1/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:22:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "692"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"value\": 757665943800,\n        \"key\": \"آبان 1402\"\n    },\n    {\n        \"value\": 314485446900,\n        \"key\": \"آبان 1403\"\n    },\n    {\n        \"value\": 736702490000,\n        \"key\": \"آذر 1402\"\n    },\n    {\n        \"value\": 727561709400,\n        \"key\": \"اردیبهشت 1403\"\n    },\n    {\n        \"value\": 763058628200,\n        \"key\": \"اسفند 1402\"\n    },\n    {\n        \"value\": 761797440800,\n        \"key\": \"بهمن 1402\"\n    },\n    {\n        \"value\": 766553163300,\n        \"key\": \"تیر 1403\"\n    },\n    {\n        \"value\": 768442508300,\n        \"key\": \"خرداد 1403\"\n    },\n    {\n        \"value\": 782055566900,\n        \"key\": \"دی 1402\"\n    },\n    {\n        \"value\": 509623185900,\n        \"key\": \"شهریور 1402\"\n    },\n    {\n        \"value\": 733725322600,\n        \"key\": \"شهریور 1403\"\n    },\n    {\n        \"value\": 766169091200,\n        \"key\": \"فروردین 1403\"\n    },\n    {\n        \"value\": 762546431800,\n        \"key\": \"مرداد 1403\"\n    },\n    {\n        \"value\": 776964861200,\n        \"key\": \"مهر 1402\"\n    },\n    {\n        \"value\": 766128106500,\n        \"key\": \"مهر 1403\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "v2 get report",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "v2 count daily merchant id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "daily",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v2/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v2",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:23:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12886"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"1402/10/1\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/10/10\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/10/11\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/12\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/13\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/10/14\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/15\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/16\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/10/17\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/10/18\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/19\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/2\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/20\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/10/21\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/10/22\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/23\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/10/24\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/10/25\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/10/26\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/10/27\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/28\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/10/29\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1402/10/3\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/30\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/31\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/10/4\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/5\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/6\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/10/7\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/10/8\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/10/9\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/1\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/10\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/11/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/12\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/13\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/11/14\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/15\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/11/16\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/17\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/18\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/11/19\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/2\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/11/20\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/11/21\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/11/22\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/11/23\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/11/24\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/25\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/26\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/27\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/28\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/11/29\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/11/3\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/30\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/4\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/5\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/6\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/7\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/11/8\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/11/9\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/12/1\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/12/10\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/12/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/12/12\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/12/13\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/12/14\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/12/15\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/12/16\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/12/17\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/12/18\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/12/19\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/12/2\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/12/20\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/12/21\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/12/22\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1402/12/23\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/12/24\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/12/25\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/12/26\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/12/27\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/12/28\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/12/29\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/12/3\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/12/30\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/12/31\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/12/4\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/12/5\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/12/6\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/12/7\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/12/8\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/12/9\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/10\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/6/11\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/6/12\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/6/13\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/6/14\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/6/15\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/6/16\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/6/17\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/18\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/6/19\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/6/20\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/6/21\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/22\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/6/23\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/6/24\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/25\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/6/26\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/27\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/6/28\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/29\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/6/30\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/7/1\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/7/10\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/7/11\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/7/12\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/7/13\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/7/14\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/7/15\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/7/16\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/7/17\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1402/7/18\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/7/19\",\n        \"value\": 11\n    },\n    {\n        \"key\": \"1402/7/2\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/7/20\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/7/21\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/7/22\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/7/23\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/7/24\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/7/25\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/7/26\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/7/27\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/7/28\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/7/29\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/7/3\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/7/30\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/7/31\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/7/4\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/7/5\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/7/6\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/7/7\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/7/8\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/7/9\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/8/10\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/8/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/8/12\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/8/13\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1402/8/14\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/8/15\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/8/16\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/8/17\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/8/18\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/8/19\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/8/2\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/8/20\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/8/21\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/8/22\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/8/23\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/8/24\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/8/25\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/8/26\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/8/27\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/8/28\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/8/29\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/8/3\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/8/30\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/8/31\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/8/4\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/8/5\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/8/6\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/8/7\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/8/8\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1402/8/9\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/1\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/9/10\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1402/9/11\",\n        \"value\": 11\n    },\n    {\n        \"key\": \"1402/9/12\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/9/13\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/9/14\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/9/15\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/9/16\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/9/17\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/9/18\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/9/19\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/9/2\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/9/20\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/21\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1402/9/22\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/23\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/9/24\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/9/25\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1402/9/26\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1402/9/27\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1402/9/28\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/29\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/9/3\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/30\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1402/9/4\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/5\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1402/9/6\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1402/9/7\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1402/9/8\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1402/9/9\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/1/1\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/10\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/12\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/1/13\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/1/14\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/1/15\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/16\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/1/17\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/18\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/19\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/1/2\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/20\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/1/21\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/1/22\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/23\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/1/24\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/25\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/1/26\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/1/27\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/28\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/1/29\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/1/3\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/30\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/1/31\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/4\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/1/5\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/1/6\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/7\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/1/8\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/1/9\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/2/1\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/2/10\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/2/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/12\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/13\",\n        \"value\": 12\n    },\n    {\n        \"key\": \"1403/2/14\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/2/15\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1403/2/16\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/17\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/18\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/2/19\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/2/2\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/2/20\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/2/21\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/22\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/2/23\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1403/2/24\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/2/25\",\n        \"value\": 11\n    },\n    {\n        \"key\": \"1403/2/26\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/2/27\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/28\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/2/29\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/2/3\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/2/4\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/2/5\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/2/6\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/2/7\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/2/8\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/2/9\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/1\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/3/10\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/3/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/3/12\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/13\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/3/14\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/15\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/3/16\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/17\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/3/18\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/19\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/3/2\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/3/20\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/3/21\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/3/22\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/3/23\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/3/24\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/3/25\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/3/26\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/27\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/3/28\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/3/29\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/3/3\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/3/30\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/31\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/3/4\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1403/3/5\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/3/6\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/3/7\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/3/8\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/3/9\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/4/1\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/4/10\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/4/11\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/12\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/4/13\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/4/14\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/4/15\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/4/16\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/4/17\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/4/18\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/4/19\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/4/2\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/4/20\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/21\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/4/22\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/23\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/4/24\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/25\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/26\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/27\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/28\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/4/29\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/4/3\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/4/30\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/4/4\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/4/5\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/4/6\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/4/7\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/4/8\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/4/9\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/5/1\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/5/10\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/5/11\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/5/12\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/5/13\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/5/14\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/5/15\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/5/16\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/5/17\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/5/18\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/5/19\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/5/2\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/5/20\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1403/5/21\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/5/22\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/5/23\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/5/24\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/5/25\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/5/26\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/5/27\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/5/28\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/5/29\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/5/3\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/5/30\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/5/31\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/5/4\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/5/5\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/5/6\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/5/7\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/5/8\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/5/9\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/6/1\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/6/10\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/6/11\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/6/12\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/6/13\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/14\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/15\",\n        \"value\": 1\n    },\n    {\n        \"key\": \"1403/6/16\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/6/17\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/6/18\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/19\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/6/2\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/20\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/6/21\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/6/22\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/6/23\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/6/24\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/25\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/6/26\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/27\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/6/28\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/6/29\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/3\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/6/30\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/6/4\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/6/5\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/6/6\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/6/7\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/6/8\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/6/9\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/7/1\",\n        \"value\": 2\n    },\n    {\n        \"key\": \"1403/7/10\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/7/11\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/12\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/13\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/7/14\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/15\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/7/16\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/17\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/18\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/7/19\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/7/2\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/20\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/21\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/7/22\",\n        \"value\": 8\n    },\n    {\n        \"key\": \"1403/7/23\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/24\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/25\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/26\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/27\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/28\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/7/29\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/7/3\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/7/30\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/7/31\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/7/4\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/7/5\",\n        \"value\": 9\n    },\n    {\n        \"key\": \"1403/7/6\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/7\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/8\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/7/9\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/8/1\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/8/10\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/8/11\",\n        \"value\": 3\n    },\n    {\n        \"key\": \"1403/8/12\",\n        \"value\": 4\n    },\n    {\n        \"key\": \"1403/8/13\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/8/2\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/8/3\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/8/4\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/8/5\",\n        \"value\": 5\n    },\n    {\n        \"key\": \"1403/8/6\",\n        \"value\": 10\n    },\n    {\n        \"key\": \"1403/8/7\",\n        \"value\": 6\n    },\n    {\n        \"key\": \"1403/8/8\",\n        \"value\": 7\n    },\n    {\n        \"key\": \"1403/8/9\",\n        \"value\": 6\n    }\n]"
+				},
+				{
+					"name": "v2 count monthly merchant id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "monthly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v2/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v2",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:23:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "556"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"آبان 1402\",\n        \"value\": 177\n    },\n    {\n        \"key\": \"آبان 1403\",\n        \"value\": 76\n    },\n    {\n        \"key\": \"آذر 1402\",\n        \"value\": 160\n    },\n    {\n        \"key\": \"اردیبهشت 1403\",\n        \"value\": 164\n    },\n    {\n        \"key\": \"اسفند 1402\",\n        \"value\": 160\n    },\n    {\n        \"key\": \"بهمن 1402\",\n        \"value\": 169\n    },\n    {\n        \"key\": \"تیر 1403\",\n        \"value\": 175\n    },\n    {\n        \"key\": \"خرداد 1403\",\n        \"value\": 151\n    },\n    {\n        \"key\": \"دی 1402\",\n        \"value\": 152\n    },\n    {\n        \"key\": \"شهریور 1402\",\n        \"value\": 103\n    },\n    {\n        \"key\": \"شهریور 1403\",\n        \"value\": 158\n    },\n    {\n        \"key\": \"فروردین 1403\",\n        \"value\": 141\n    },\n    {\n        \"key\": \"مرداد 1403\",\n        \"value\": 168\n    },\n    {\n        \"key\": \"مهر 1402\",\n        \"value\": 181\n    },\n    {\n        \"key\": \"مهر 1403\",\n        \"value\": 170\n    }\n]"
+				},
+				{
+					"name": "count monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "monthly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v2/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v2",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:25:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "571"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"آبان 1402\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"آبان 1403\",\n        \"value\": 637\n    },\n    {\n        \"key\": \"آذر 1402\",\n        \"value\": 1470\n    },\n    {\n        \"key\": \"اردیبهشت 1403\",\n        \"value\": 1421\n    },\n    {\n        \"key\": \"اسفند 1402\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"بهمن 1402\",\n        \"value\": 1470\n    },\n    {\n        \"key\": \"تیر 1403\",\n        \"value\": 1470\n    },\n    {\n        \"key\": \"خرداد 1403\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"دی 1402\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"شهریور 1402\",\n        \"value\": 1029\n    },\n    {\n        \"key\": \"شهریور 1403\",\n        \"value\": 1470\n    },\n    {\n        \"key\": \"فروردین 1403\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"مرداد 1403\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"مهر 1402\",\n        \"value\": 1519\n    },\n    {\n        \"key\": \"مهر 1403\",\n        \"value\": 1519\n    }\n]"
+				},
+				{
+					"name": "count weekly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "count",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "weekly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v2/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v2",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:25:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2933"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"هفته 0 سال 1403\",\n        \"value\": 294\n    },\n    {\n        \"key\": \"هفته 1 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 10 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 11 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 12 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 13 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 14 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 15 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 16 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 17 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 18 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 19 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 2 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 20 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 21 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 22 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 23 سال 1402\",\n        \"value\": 49\n    },\n    {\n        \"key\": \"هفته 23 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 24 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 24 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 25 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 25 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 26 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 26 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 27 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 27 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 28 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 28 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 29 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 29 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 3 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 30 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 30 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 31 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 31 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 32 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 32 سال 1403\",\n        \"value\": 147\n    },\n    {\n        \"key\": \"هفته 33 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 34 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 35 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 36 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 37 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 38 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 39 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 4 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 40 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 41 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 42 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 43 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 44 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 45 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 46 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 47 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 48 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 49 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 5 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 50 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 51 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 52 سال 1402\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 53 سال 1402\",\n        \"value\": 49\n    },\n    {\n        \"key\": \"هفته 6 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 7 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 8 سال 1403\",\n        \"value\": 343\n    },\n    {\n        \"key\": \"هفته 9 سال 1403\",\n        \"value\": 343\n    }\n]"
+				},
+				{
+					"name": "amount daily",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "amount",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "daily",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v2/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v2",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:26:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17207"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"1402/10/1\",\n        \"value\": 25343328400\n    },\n    {\n        \"key\": \"1402/10/10\",\n        \"value\": 26148971000\n    },\n    {\n        \"key\": \"1402/10/11\",\n        \"value\": 21184169600\n    },\n    {\n        \"key\": \"1402/10/12\",\n        \"value\": 25030464100\n    },\n    {\n        \"key\": \"1402/10/13\",\n        \"value\": 27016550100\n    },\n    {\n        \"key\": \"1402/10/14\",\n        \"value\": 26113240800\n    },\n    {\n        \"key\": \"1402/10/15\",\n        \"value\": 25424042100\n    },\n    {\n        \"key\": \"1402/10/16\",\n        \"value\": 27994505900\n    },\n    {\n        \"key\": \"1402/10/17\",\n        \"value\": 26830673900\n    },\n    {\n        \"key\": \"1402/10/18\",\n        \"value\": 28491649700\n    },\n    {\n        \"key\": \"1402/10/19\",\n        \"value\": 26673001900\n    },\n    {\n        \"key\": \"1402/10/2\",\n        \"value\": 27155982200\n    },\n    {\n        \"key\": \"1402/10/20\",\n        \"value\": 23287007000\n    },\n    {\n        \"key\": \"1402/10/21\",\n        \"value\": 26387100000\n    },\n    {\n        \"key\": \"1402/10/22\",\n        \"value\": 26038222000\n    },\n    {\n        \"key\": \"1402/10/23\",\n        \"value\": 27276530500\n    },\n    {\n        \"key\": \"1402/10/24\",\n        \"value\": 21510817000\n    },\n    {\n        \"key\": \"1402/10/25\",\n        \"value\": 22807451200\n    },\n    {\n        \"key\": \"1402/10/26\",\n        \"value\": 25558392400\n    },\n    {\n        \"key\": \"1402/10/27\",\n        \"value\": 22811704400\n    },\n    {\n        \"key\": \"1402/10/28\",\n        \"value\": 25133527500\n    },\n    {\n        \"key\": \"1402/10/29\",\n        \"value\": 23842283200\n    },\n    {\n        \"key\": \"1402/10/3\",\n        \"value\": 26374619000\n    },\n    {\n        \"key\": \"1402/10/30\",\n        \"value\": 25805746600\n    },\n    {\n        \"key\": \"1402/10/31\",\n        \"value\": 23541836700\n    },\n    {\n        \"key\": \"1402/10/4\",\n        \"value\": 27760511500\n    },\n    {\n        \"key\": \"1402/10/5\",\n        \"value\": 23883068100\n    },\n    {\n        \"key\": \"1402/10/6\",\n        \"value\": 26949191200\n    },\n    {\n        \"key\": \"1402/10/7\",\n        \"value\": 21844576400\n    },\n    {\n        \"key\": \"1402/10/8\",\n        \"value\": 21636032500\n    },\n    {\n        \"key\": \"1402/10/9\",\n        \"value\": 26200370000\n    },\n    {\n        \"key\": \"1402/11/1\",\n        \"value\": 26835187100\n    },\n    {\n        \"key\": \"1402/11/10\",\n        \"value\": 24109544100\n    },\n    {\n        \"key\": \"1402/11/11\",\n        \"value\": 24516583900\n    },\n    {\n        \"key\": \"1402/11/12\",\n        \"value\": 25485069900\n    },\n    {\n        \"key\": \"1402/11/13\",\n        \"value\": 22993125200\n    },\n    {\n        \"key\": \"1402/11/14\",\n        \"value\": 24216591100\n    },\n    {\n        \"key\": \"1402/11/15\",\n        \"value\": 31255325700\n    },\n    {\n        \"key\": \"1402/11/16\",\n        \"value\": 23310051000\n    },\n    {\n        \"key\": \"1402/11/17\",\n        \"value\": 23617328000\n    },\n    {\n        \"key\": \"1402/11/18\",\n        \"value\": 27621086300\n    },\n    {\n        \"key\": \"1402/11/19\",\n        \"value\": 23398445600\n    },\n    {\n        \"key\": \"1402/11/2\",\n        \"value\": 29507361700\n    },\n    {\n        \"key\": \"1402/11/20\",\n        \"value\": 24502521700\n    },\n    {\n        \"key\": \"1402/11/21\",\n        \"value\": 27450807900\n    },\n    {\n        \"key\": \"1402/11/22\",\n        \"value\": 26903082900\n    },\n    {\n        \"key\": \"1402/11/23\",\n        \"value\": 23300623900\n    },\n    {\n        \"key\": \"1402/11/24\",\n        \"value\": 25395201900\n    },\n    {\n        \"key\": \"1402/11/25\",\n        \"value\": 21998466800\n    },\n    {\n        \"key\": \"1402/11/26\",\n        \"value\": 22875806800\n    },\n    {\n        \"key\": \"1402/11/27\",\n        \"value\": 23844042300\n    },\n    {\n        \"key\": \"1402/11/28\",\n        \"value\": 24812234600\n    },\n    {\n        \"key\": \"1402/11/29\",\n        \"value\": 20746460800\n    },\n    {\n        \"key\": \"1402/11/3\",\n        \"value\": 25960605800\n    },\n    {\n        \"key\": \"1402/11/30\",\n        \"value\": 26504696400\n    },\n    {\n        \"key\": \"1402/11/4\",\n        \"value\": 26761910300\n    },\n    {\n        \"key\": \"1402/11/5\",\n        \"value\": 27580784900\n    },\n    {\n        \"key\": \"1402/11/6\",\n        \"value\": 26762897300\n    },\n    {\n        \"key\": \"1402/11/7\",\n        \"value\": 28086385000\n    },\n    {\n        \"key\": \"1402/11/8\",\n        \"value\": 25117077600\n    },\n    {\n        \"key\": \"1402/11/9\",\n        \"value\": 26328134300\n    },\n    {\n        \"key\": \"1402/12/1\",\n        \"value\": 25361813600\n    },\n    {\n        \"key\": \"1402/12/10\",\n        \"value\": 23324084200\n    },\n    {\n        \"key\": \"1402/12/11\",\n        \"value\": 22061582000\n    },\n    {\n        \"key\": \"1402/12/12\",\n        \"value\": 27066303700\n    },\n    {\n        \"key\": \"1402/12/13\",\n        \"value\": 25747708100\n    },\n    {\n        \"key\": \"1402/12/14\",\n        \"value\": 24485604300\n    },\n    {\n        \"key\": \"1402/12/15\",\n        \"value\": 23475946600\n    },\n    {\n        \"key\": \"1402/12/16\",\n        \"value\": 25028647900\n    },\n    {\n        \"key\": \"1402/12/17\",\n        \"value\": 23793885800\n    },\n    {\n        \"key\": \"1402/12/18\",\n        \"value\": 24198429100\n    },\n    {\n        \"key\": \"1402/12/19\",\n        \"value\": 26506268300\n    },\n    {\n        \"key\": \"1402/12/2\",\n        \"value\": 21076179800\n    },\n    {\n        \"key\": \"1402/12/20\",\n        \"value\": 26364465300\n    },\n    {\n        \"key\": \"1402/12/21\",\n        \"value\": 28261828400\n    },\n    {\n        \"key\": \"1402/12/22\",\n        \"value\": 22977162500\n    },\n    {\n        \"key\": \"1402/12/23\",\n        \"value\": 24813418000\n    },\n    {\n        \"key\": \"1402/12/24\",\n        \"value\": 28367562600\n    },\n    {\n        \"key\": \"1402/12/25\",\n        \"value\": 21718418100\n    },\n    {\n        \"key\": \"1402/12/26\",\n        \"value\": 25174165300\n    },\n    {\n        \"key\": \"1402/12/27\",\n        \"value\": 26864541800\n    },\n    {\n        \"key\": \"1402/12/28\",\n        \"value\": 24687314700\n    },\n    {\n        \"key\": \"1402/12/29\",\n        \"value\": 24512970400\n    },\n    {\n        \"key\": \"1402/12/3\",\n        \"value\": 24359941000\n    },\n    {\n        \"key\": \"1402/12/30\",\n        \"value\": 23860967400\n    },\n    {\n        \"key\": \"1402/12/31\",\n        \"value\": 20215965800\n    },\n    {\n        \"key\": \"1402/12/4\",\n        \"value\": 24458851400\n    },\n    {\n        \"key\": \"1402/12/5\",\n        \"value\": 23443633500\n    },\n    {\n        \"key\": \"1402/12/6\",\n        \"value\": 24313941900\n    },\n    {\n        \"key\": \"1402/12/7\",\n        \"value\": 24282800700\n    },\n    {\n        \"key\": \"1402/12/8\",\n        \"value\": 29629236800\n    },\n    {\n        \"key\": \"1402/12/9\",\n        \"value\": 22624989200\n    },\n    {\n        \"key\": \"1402/6/10\",\n        \"value\": 27519391800\n    },\n    {\n        \"key\": \"1402/6/11\",\n        \"value\": 25016879600\n    },\n    {\n        \"key\": \"1402/6/12\",\n        \"value\": 25944852100\n    },\n    {\n        \"key\": \"1402/6/13\",\n        \"value\": 25677448900\n    },\n    {\n        \"key\": \"1402/6/14\",\n        \"value\": 23041624800\n    },\n    {\n        \"key\": \"1402/6/15\",\n        \"value\": 23154676500\n    },\n    {\n        \"key\": \"1402/6/16\",\n        \"value\": 25147397700\n    },\n    {\n        \"key\": \"1402/6/17\",\n        \"value\": 26387325900\n    },\n    {\n        \"key\": \"1402/6/18\",\n        \"value\": 25577494100\n    },\n    {\n        \"key\": \"1402/6/19\",\n        \"value\": 21636418300\n    },\n    {\n        \"key\": \"1402/6/20\",\n        \"value\": 25228650600\n    },\n    {\n        \"key\": \"1402/6/21\",\n        \"value\": 21390453100\n    },\n    {\n        \"key\": \"1402/6/22\",\n        \"value\": 23848085200\n    },\n    {\n        \"key\": \"1402/6/23\",\n        \"value\": 21685432900\n    },\n    {\n        \"key\": \"1402/6/24\",\n        \"value\": 25055484800\n    },\n    {\n        \"key\": \"1402/6/25\",\n        \"value\": 26657442400\n    },\n    {\n        \"key\": \"1402/6/26\",\n        \"value\": 20005903000\n    },\n    {\n        \"key\": \"1402/6/27\",\n        \"value\": 26525535200\n    },\n    {\n        \"key\": \"1402/6/28\",\n        \"value\": 24988791200\n    },\n    {\n        \"key\": \"1402/6/29\",\n        \"value\": 21662705400\n    },\n    {\n        \"key\": \"1402/6/30\",\n        \"value\": 23471192400\n    },\n    {\n        \"key\": \"1402/7/1\",\n        \"value\": 24414405500\n    },\n    {\n        \"key\": \"1402/7/10\",\n        \"value\": 24749345800\n    },\n    {\n        \"key\": \"1402/7/11\",\n        \"value\": 27604993200\n    },\n    {\n        \"key\": \"1402/7/12\",\n        \"value\": 24629536300\n    },\n    {\n        \"key\": \"1402/7/13\",\n        \"value\": 20829132600\n    },\n    {\n        \"key\": \"1402/7/14\",\n        \"value\": 22435699200\n    },\n    {\n        \"key\": \"1402/7/15\",\n        \"value\": 26356387100\n    },\n    {\n        \"key\": \"1402/7/16\",\n        \"value\": 28034215400\n    },\n    {\n        \"key\": \"1402/7/17\",\n        \"value\": 25560657100\n    },\n    {\n        \"key\": \"1402/7/18\",\n        \"value\": 22838717900\n    },\n    {\n        \"key\": \"1402/7/19\",\n        \"value\": 24601163100\n    },\n    {\n        \"key\": \"1402/7/2\",\n        \"value\": 23561119400\n    },\n    {\n        \"key\": \"1402/7/20\",\n        \"value\": 23768181000\n    },\n    {\n        \"key\": \"1402/7/21\",\n        \"value\": 26133995000\n    },\n    {\n        \"key\": \"1402/7/22\",\n        \"value\": 27834869300\n    },\n    {\n        \"key\": \"1402/7/23\",\n        \"value\": 29583450700\n    },\n    {\n        \"key\": \"1402/7/24\",\n        \"value\": 23879253700\n    },\n    {\n        \"key\": \"1402/7/25\",\n        \"value\": 24130347100\n    },\n    {\n        \"key\": \"1402/7/26\",\n        \"value\": 24395777600\n    },\n    {\n        \"key\": \"1402/7/27\",\n        \"value\": 25112470100\n    },\n    {\n        \"key\": \"1402/7/28\",\n        \"value\": 29051321000\n    },\n    {\n        \"key\": \"1402/7/29\",\n        \"value\": 24477713700\n    },\n    {\n        \"key\": \"1402/7/3\",\n        \"value\": 26225519700\n    },\n    {\n        \"key\": \"1402/7/30\",\n        \"value\": 24466836100\n    },\n    {\n        \"key\": \"1402/7/31\",\n        \"value\": 21450376400\n    },\n    {\n        \"key\": \"1402/7/4\",\n        \"value\": 25470247700\n    },\n    {\n        \"key\": \"1402/7/5\",\n        \"value\": 26855528200\n    },\n    {\n        \"key\": \"1402/7/6\",\n        \"value\": 24396011700\n    },\n    {\n        \"key\": \"1402/7/7\",\n        \"value\": 24714477300\n    },\n    {\n        \"key\": \"1402/7/8\",\n        \"value\": 26068628100\n    },\n    {\n        \"key\": \"1402/7/9\",\n        \"value\": 23334484200\n    },\n    {\n        \"key\": \"1402/8/1\",\n        \"value\": 25346489300\n    },\n    {\n        \"key\": \"1402/8/10\",\n        \"value\": 25745258800\n    },\n    {\n        \"key\": \"1402/8/11\",\n        \"value\": 22484468600\n    },\n    {\n        \"key\": \"1402/8/12\",\n        \"value\": 26065863400\n    },\n    {\n        \"key\": \"1402/8/13\",\n        \"value\": 23286874900\n    },\n    {\n        \"key\": \"1402/8/14\",\n        \"value\": 22054350900\n    },\n    {\n        \"key\": \"1402/8/15\",\n        \"value\": 23514275500\n    },\n    {\n        \"key\": \"1402/8/16\",\n        \"value\": 24116289200\n    },\n    {\n        \"key\": \"1402/8/17\",\n        \"value\": 26498737300\n    },\n    {\n        \"key\": \"1402/8/18\",\n        \"value\": 28231237200\n    },\n    {\n        \"key\": \"1402/8/19\",\n        \"value\": 26672619800\n    },\n    {\n        \"key\": \"1402/8/2\",\n        \"value\": 23862204800\n    },\n    {\n        \"key\": \"1402/8/20\",\n        \"value\": 23738160300\n    },\n    {\n        \"key\": \"1402/8/21\",\n        \"value\": 26823087000\n    },\n    {\n        \"key\": \"1402/8/22\",\n        \"value\": 23811259800\n    },\n    {\n        \"key\": \"1402/8/23\",\n        \"value\": 22058547800\n    },\n    {\n        \"key\": \"1402/8/24\",\n        \"value\": 27308800000\n    },\n    {\n        \"key\": \"1402/8/25\",\n        \"value\": 25739973800\n    },\n    {\n        \"key\": \"1402/8/26\",\n        \"value\": 28926149700\n    },\n    {\n        \"key\": \"1402/8/27\",\n        \"value\": 18427625000\n    },\n    {\n        \"key\": \"1402/8/28\",\n        \"value\": 22993861500\n    },\n    {\n        \"key\": \"1402/8/29\",\n        \"value\": 25433434800\n    },\n    {\n        \"key\": \"1402/8/3\",\n        \"value\": 21239533800\n    },\n    {\n        \"key\": \"1402/8/30\",\n        \"value\": 24275072300\n    },\n    {\n        \"key\": \"1402/8/31\",\n        \"value\": 21396171600\n    },\n    {\n        \"key\": \"1402/8/4\",\n        \"value\": 24373523900\n    },\n    {\n        \"key\": \"1402/8/5\",\n        \"value\": 25727537400\n    },\n    {\n        \"key\": \"1402/8/6\",\n        \"value\": 22304334900\n    },\n    {\n        \"key\": \"1402/8/7\",\n        \"value\": 25353782900\n    },\n    {\n        \"key\": \"1402/8/8\",\n        \"value\": 25251415600\n    },\n    {\n        \"key\": \"1402/8/9\",\n        \"value\": 24605002000\n    },\n    {\n        \"key\": \"1402/9/1\",\n        \"value\": 26823825700\n    },\n    {\n        \"key\": \"1402/9/10\",\n        \"value\": 27681846100\n    },\n    {\n        \"key\": \"1402/9/11\",\n        \"value\": 25830132600\n    },\n    {\n        \"key\": \"1402/9/12\",\n        \"value\": 28607926400\n    },\n    {\n        \"key\": \"1402/9/13\",\n        \"value\": 23105064000\n    },\n    {\n        \"key\": \"1402/9/14\",\n        \"value\": 22611640700\n    },\n    {\n        \"key\": \"1402/9/15\",\n        \"value\": 23504938600\n    },\n    {\n        \"key\": \"1402/9/16\",\n        \"value\": 23985409200\n    },\n    {\n        \"key\": \"1402/9/17\",\n        \"value\": 25030729700\n    },\n    {\n        \"key\": \"1402/9/18\",\n        \"value\": 22142179400\n    },\n    {\n        \"key\": \"1402/9/19\",\n        \"value\": 24270253300\n    },\n    {\n        \"key\": \"1402/9/2\",\n        \"value\": 23701916100\n    },\n    {\n        \"key\": \"1402/9/20\",\n        \"value\": 26368098800\n    },\n    {\n        \"key\": \"1402/9/21\",\n        \"value\": 23367702900\n    },\n    {\n        \"key\": \"1402/9/22\",\n        \"value\": 24431731700\n    },\n    {\n        \"key\": \"1402/9/23\",\n        \"value\": 28086795200\n    },\n    {\n        \"key\": \"1402/9/24\",\n        \"value\": 24934047100\n    },\n    {\n        \"key\": \"1402/9/25\",\n        \"value\": 21124460000\n    },\n    {\n        \"key\": \"1402/9/26\",\n        \"value\": 21908491300\n    },\n    {\n        \"key\": \"1402/9/27\",\n        \"value\": 21041341800\n    },\n    {\n        \"key\": \"1402/9/28\",\n        \"value\": 28977248100\n    },\n    {\n        \"key\": \"1402/9/29\",\n        \"value\": 23826106500\n    },\n    {\n        \"key\": \"1402/9/3\",\n        \"value\": 23208501600\n    },\n    {\n        \"key\": \"1402/9/30\",\n        \"value\": 23877044200\n    },\n    {\n        \"key\": \"1402/9/4\",\n        \"value\": 25252702400\n    },\n    {\n        \"key\": \"1402/9/5\",\n        \"value\": 25887866600\n    },\n    {\n        \"key\": \"1402/9/6\",\n        \"value\": 22216183200\n    },\n    {\n        \"key\": \"1402/9/7\",\n        \"value\": 26916303900\n    },\n    {\n        \"key\": \"1402/9/8\",\n        \"value\": 24573442600\n    },\n    {\n        \"key\": \"1402/9/9\",\n        \"value\": 23408560300\n    },\n    {\n        \"key\": \"1403/1/1\",\n        \"value\": 22303747600\n    },\n    {\n        \"key\": \"1403/1/10\",\n        \"value\": 24619162600\n    },\n    {\n        \"key\": \"1403/1/11\",\n        \"value\": 23991080300\n    },\n    {\n        \"key\": \"1403/1/12\",\n        \"value\": 24660454200\n    },\n    {\n        \"key\": \"1403/1/13\",\n        \"value\": 22992487700\n    },\n    {\n        \"key\": \"1403/1/14\",\n        \"value\": 26469087500\n    },\n    {\n        \"key\": \"1403/1/15\",\n        \"value\": 25584557200\n    },\n    {\n        \"key\": \"1403/1/16\",\n        \"value\": 26199508800\n    },\n    {\n        \"key\": \"1403/1/17\",\n        \"value\": 22294859800\n    },\n    {\n        \"key\": \"1403/1/18\",\n        \"value\": 23026797500\n    },\n    {\n        \"key\": \"1403/1/19\",\n        \"value\": 24067350000\n    },\n    {\n        \"key\": \"1403/1/2\",\n        \"value\": 24560211600\n    },\n    {\n        \"key\": \"1403/1/20\",\n        \"value\": 24998369000\n    },\n    {\n        \"key\": \"1403/1/21\",\n        \"value\": 26104660500\n    },\n    {\n        \"key\": \"1403/1/22\",\n        \"value\": 24290938400\n    },\n    {\n        \"key\": \"1403/1/23\",\n        \"value\": 24889861800\n    },\n    {\n        \"key\": \"1403/1/24\",\n        \"value\": 29091944900\n    },\n    {\n        \"key\": \"1403/1/25\",\n        \"value\": 24300678900\n    },\n    {\n        \"key\": \"1403/1/26\",\n        \"value\": 23177556900\n    },\n    {\n        \"key\": \"1403/1/27\",\n        \"value\": 26098380000\n    },\n    {\n        \"key\": \"1403/1/28\",\n        \"value\": 27442995500\n    },\n    {\n        \"key\": \"1403/1/29\",\n        \"value\": 22987225300\n    },\n    {\n        \"key\": \"1403/1/3\",\n        \"value\": 21791547500\n    },\n    {\n        \"key\": \"1403/1/30\",\n        \"value\": 25778158800\n    },\n    {\n        \"key\": \"1403/1/31\",\n        \"value\": 25443957300\n    },\n    {\n        \"key\": \"1403/1/4\",\n        \"value\": 22330197600\n    },\n    {\n        \"key\": \"1403/1/5\",\n        \"value\": 26987157400\n    },\n    {\n        \"key\": \"1403/1/6\",\n        \"value\": 23666050300\n    },\n    {\n        \"key\": \"1403/1/7\",\n        \"value\": 26819848900\n    },\n    {\n        \"key\": \"1403/1/8\",\n        \"value\": 23734516800\n    },\n    {\n        \"key\": \"1403/1/9\",\n        \"value\": 25465740600\n    },\n    {\n        \"key\": \"1403/2/1\",\n        \"value\": 28097584600\n    },\n    {\n        \"key\": \"1403/2/10\",\n        \"value\": 26220140000\n    },\n    {\n        \"key\": \"1403/2/11\",\n        \"value\": 26376292200\n    },\n    {\n        \"key\": \"1403/2/12\",\n        \"value\": 24924549800\n    },\n    {\n        \"key\": \"1403/2/13\",\n        \"value\": 28582836600\n    },\n    {\n        \"key\": \"1403/2/14\",\n        \"value\": 24657314300\n    },\n    {\n        \"key\": \"1403/2/15\",\n        \"value\": 23099441600\n    },\n    {\n        \"key\": \"1403/2/16\",\n        \"value\": 28176050600\n    },\n    {\n        \"key\": \"1403/2/17\",\n        \"value\": 24084388900\n    },\n    {\n        \"key\": \"1403/2/18\",\n        \"value\": 29822712100\n    },\n    {\n        \"key\": \"1403/2/19\",\n        \"value\": 22485850100\n    },\n    {\n        \"key\": \"1403/2/2\",\n        \"value\": 23492269600\n    },\n    {\n        \"key\": \"1403/2/20\",\n        \"value\": 23807195100\n    },\n    {\n        \"key\": \"1403/2/21\",\n        \"value\": 25280753600\n    },\n    {\n        \"key\": \"1403/2/22\",\n        \"value\": 23964613700\n    },\n    {\n        \"key\": \"1403/2/23\",\n        \"value\": 24975108700\n    },\n    {\n        \"key\": \"1403/2/24\",\n        \"value\": 26501301900\n    },\n    {\n        \"key\": \"1403/2/25\",\n        \"value\": 24807453900\n    },\n    {\n        \"key\": \"1403/2/26\",\n        \"value\": 24850565100\n    },\n    {\n        \"key\": \"1403/2/27\",\n        \"value\": 25649860300\n    },\n    {\n        \"key\": \"1403/2/28\",\n        \"value\": 21555368200\n    },\n    {\n        \"key\": \"1403/2/29\",\n        \"value\": 24946672700\n    },\n    {\n        \"key\": \"1403/2/3\",\n        \"value\": 26201426700\n    },\n    {\n        \"key\": \"1403/2/4\",\n        \"value\": 22359629000\n    },\n    {\n        \"key\": \"1403/2/5\",\n        \"value\": 28371157500\n    },\n    {\n        \"key\": \"1403/2/6\",\n        \"value\": 24775052400\n    },\n    {\n        \"key\": \"1403/2/7\",\n        \"value\": 25298281000\n    },\n    {\n        \"key\": \"1403/2/8\",\n        \"value\": 21962186300\n    },\n    {\n        \"key\": \"1403/2/9\",\n        \"value\": 22235652900\n    },\n    {\n        \"key\": \"1403/3/1\",\n        \"value\": 24917821600\n    },\n    {\n        \"key\": \"1403/3/10\",\n        \"value\": 21900666500\n    },\n    {\n        \"key\": \"1403/3/11\",\n        \"value\": 25126911500\n    },\n    {\n        \"key\": \"1403/3/12\",\n        \"value\": 21605312900\n    },\n    {\n        \"key\": \"1403/3/13\",\n        \"value\": 27767608200\n    },\n    {\n        \"key\": \"1403/3/14\",\n        \"value\": 24665043700\n    },\n    {\n        \"key\": \"1403/3/15\",\n        \"value\": 21759217600\n    },\n    {\n        \"key\": \"1403/3/16\",\n        \"value\": 21946389500\n    },\n    {\n        \"key\": \"1403/3/17\",\n        \"value\": 24617158800\n    },\n    {\n        \"key\": \"1403/3/18\",\n        \"value\": 26027828600\n    },\n    {\n        \"key\": \"1403/3/19\",\n        \"value\": 27167926900\n    },\n    {\n        \"key\": \"1403/3/2\",\n        \"value\": 24928792600\n    },\n    {\n        \"key\": \"1403/3/20\",\n        \"value\": 24511405900\n    },\n    {\n        \"key\": \"1403/3/21\",\n        \"value\": 24929343900\n    },\n    {\n        \"key\": \"1403/3/22\",\n        \"value\": 25031639900\n    },\n    {\n        \"key\": \"1403/3/23\",\n        \"value\": 21655468500\n    },\n    {\n        \"key\": \"1403/3/24\",\n        \"value\": 22041459500\n    },\n    {\n        \"key\": \"1403/3/25\",\n        \"value\": 23509365500\n    },\n    {\n        \"key\": \"1403/3/26\",\n        \"value\": 27976506500\n    },\n    {\n        \"key\": \"1403/3/27\",\n        \"value\": 26252532200\n    },\n    {\n        \"key\": \"1403/3/28\",\n        \"value\": 28445565400\n    },\n    {\n        \"key\": \"1403/3/29\",\n        \"value\": 26973973700\n    },\n    {\n        \"key\": \"1403/3/3\",\n        \"value\": 25026481500\n    },\n    {\n        \"key\": \"1403/3/30\",\n        \"value\": 25268005500\n    },\n    {\n        \"key\": \"1403/3/31\",\n        \"value\": 21735787200\n    },\n    {\n        \"key\": \"1403/3/4\",\n        \"value\": 22461456000\n    },\n    {\n        \"key\": \"1403/3/5\",\n        \"value\": 25988656700\n    },\n    {\n        \"key\": \"1403/3/6\",\n        \"value\": 26736098200\n    },\n    {\n        \"key\": \"1403/3/7\",\n        \"value\": 26082441200\n    },\n    {\n        \"key\": \"1403/3/8\",\n        \"value\": 25891515400\n    },\n    {\n        \"key\": \"1403/3/9\",\n        \"value\": 25494127200\n    },\n    {\n        \"key\": \"1403/4/1\",\n        \"value\": 24518669900\n    },\n    {\n        \"key\": \"1403/4/10\",\n        \"value\": 23817937300\n    },\n    {\n        \"key\": \"1403/4/11\",\n        \"value\": 29362186200\n    },\n    {\n        \"key\": \"1403/4/12\",\n        \"value\": 25050319900\n    },\n    {\n        \"key\": \"1403/4/13\",\n        \"value\": 26596123000\n    },\n    {\n        \"key\": \"1403/4/14\",\n        \"value\": 22071652700\n    },\n    {\n        \"key\": \"1403/4/15\",\n        \"value\": 25034973700\n    },\n    {\n        \"key\": \"1403/4/16\",\n        \"value\": 30418778700\n    },\n    {\n        \"key\": \"1403/4/17\",\n        \"value\": 26146947000\n    },\n    {\n        \"key\": \"1403/4/18\",\n        \"value\": 22701431000\n    },\n    {\n        \"key\": \"1403/4/19\",\n        \"value\": 29720500800\n    },\n    {\n        \"key\": \"1403/4/2\",\n        \"value\": 28178257100\n    },\n    {\n        \"key\": \"1403/4/20\",\n        \"value\": 24036058700\n    },\n    {\n        \"key\": \"1403/4/21\",\n        \"value\": 23331780200\n    },\n    {\n        \"key\": \"1403/4/22\",\n        \"value\": 25316987800\n    },\n    {\n        \"key\": \"1403/4/23\",\n        \"value\": 22961373900\n    },\n    {\n        \"key\": \"1403/4/24\",\n        \"value\": 30327335600\n    },\n    {\n        \"key\": \"1403/4/25\",\n        \"value\": 25895480900\n    },\n    {\n        \"key\": \"1403/4/26\",\n        \"value\": 19631520700\n    },\n    {\n        \"key\": \"1403/4/27\",\n        \"value\": 26596017700\n    },\n    {\n        \"key\": \"1403/4/28\",\n        \"value\": 26947075100\n    },\n    {\n        \"key\": \"1403/4/29\",\n        \"value\": 27419560900\n    },\n    {\n        \"key\": \"1403/4/3\",\n        \"value\": 25213326500\n    },\n    {\n        \"key\": \"1403/4/30\",\n        \"value\": 22678229000\n    },\n    {\n        \"key\": \"1403/4/4\",\n        \"value\": 25927730300\n    },\n    {\n        \"key\": \"1403/4/5\",\n        \"value\": 24822886800\n    },\n    {\n        \"key\": \"1403/4/6\",\n        \"value\": 25895783700\n    },\n    {\n        \"key\": \"1403/4/7\",\n        \"value\": 23960034700\n    },\n    {\n        \"key\": \"1403/4/8\",\n        \"value\": 27819160600\n    },\n    {\n        \"key\": \"1403/4/9\",\n        \"value\": 24155042900\n    },\n    {\n        \"key\": \"1403/5/1\",\n        \"value\": 28509416400\n    },\n    {\n        \"key\": \"1403/5/10\",\n        \"value\": 22750347600\n    },\n    {\n        \"key\": \"1403/5/11\",\n        \"value\": 23182479400\n    },\n    {\n        \"key\": \"1403/5/12\",\n        \"value\": 25257199700\n    },\n    {\n        \"key\": \"1403/5/13\",\n        \"value\": 24330382800\n    },\n    {\n        \"key\": \"1403/5/14\",\n        \"value\": 24670786700\n    },\n    {\n        \"key\": \"1403/5/15\",\n        \"value\": 25224052100\n    },\n    {\n        \"key\": \"1403/5/16\",\n        \"value\": 26507610500\n    },\n    {\n        \"key\": \"1403/5/17\",\n        \"value\": 22264301700\n    },\n    {\n        \"key\": \"1403/5/18\",\n        \"value\": 25525646300\n    },\n    {\n        \"key\": \"1403/5/19\",\n        \"value\": 25004794100\n    },\n    {\n        \"key\": \"1403/5/2\",\n        \"value\": 24166670900\n    },\n    {\n        \"key\": \"1403/5/20\",\n        \"value\": 27557051500\n    },\n    {\n        \"key\": \"1403/5/21\",\n        \"value\": 25547870700\n    },\n    {\n        \"key\": \"1403/5/22\",\n        \"value\": 22940129200\n    },\n    {\n        \"key\": \"1403/5/23\",\n        \"value\": 22397124500\n    },\n    {\n        \"key\": \"1403/5/24\",\n        \"value\": 21631775500\n    },\n    {\n        \"key\": \"1403/5/25\",\n        \"value\": 20744986500\n    },\n    {\n        \"key\": \"1403/5/26\",\n        \"value\": 26380968800\n    },\n    {\n        \"key\": \"1403/5/27\",\n        \"value\": 26076943700\n    },\n    {\n        \"key\": \"1403/5/28\",\n        \"value\": 25179705100\n    },\n    {\n        \"key\": \"1403/5/29\",\n        \"value\": 24370444700\n    },\n    {\n        \"key\": \"1403/5/3\",\n        \"value\": 25046728800\n    },\n    {\n        \"key\": \"1403/5/30\",\n        \"value\": 24486641000\n    },\n    {\n        \"key\": \"1403/5/31\",\n        \"value\": 23222738400\n    },\n    {\n        \"key\": \"1403/5/4\",\n        \"value\": 25305967400\n    },\n    {\n        \"key\": \"1403/5/5\",\n        \"value\": 24692022100\n    },\n    {\n        \"key\": \"1403/5/6\",\n        \"value\": 23620298900\n    },\n    {\n        \"key\": \"1403/5/7\",\n        \"value\": 27564177100\n    },\n    {\n        \"key\": \"1403/5/8\",\n        \"value\": 25271750900\n    },\n    {\n        \"key\": \"1403/5/9\",\n        \"value\": 23115418800\n    },\n    {\n        \"key\": \"1403/6/1\",\n        \"value\": 24065183100\n    },\n    {\n        \"key\": \"1403/6/10\",\n        \"value\": 24313845900\n    },\n    {\n        \"key\": \"1403/6/11\",\n        \"value\": 19892081100\n    },\n    {\n        \"key\": \"1403/6/12\",\n        \"value\": 27672591600\n    },\n    {\n        \"key\": \"1403/6/13\",\n        \"value\": 25937400000\n    },\n    {\n        \"key\": \"1403/6/14\",\n        \"value\": 24448945600\n    },\n    {\n        \"key\": \"1403/6/15\",\n        \"value\": 25038394000\n    },\n    {\n        \"key\": \"1403/6/16\",\n        \"value\": 23352765300\n    },\n    {\n        \"key\": \"1403/6/17\",\n        \"value\": 23610179700\n    },\n    {\n        \"key\": \"1403/6/18\",\n        \"value\": 26316797900\n    },\n    {\n        \"key\": \"1403/6/19\",\n        \"value\": 22687713400\n    },\n    {\n        \"key\": \"1403/6/2\",\n        \"value\": 22527899500\n    },\n    {\n        \"key\": \"1403/6/20\",\n        \"value\": 21630879100\n    },\n    {\n        \"key\": \"1403/6/21\",\n        \"value\": 25529845300\n    },\n    {\n        \"key\": \"1403/6/22\",\n        \"value\": 21848496600\n    },\n    {\n        \"key\": \"1403/6/23\",\n        \"value\": 26132783000\n    },\n    {\n        \"key\": \"1403/6/24\",\n        \"value\": 28057031900\n    },\n    {\n        \"key\": \"1403/6/25\",\n        \"value\": 25979233200\n    },\n    {\n        \"key\": \"1403/6/26\",\n        \"value\": 26174801300\n    },\n    {\n        \"key\": \"1403/6/27\",\n        \"value\": 21924755600\n    },\n    {\n        \"key\": \"1403/6/28\",\n        \"value\": 25974636600\n    },\n    {\n        \"key\": \"1403/6/29\",\n        \"value\": 21724619400\n    },\n    {\n        \"key\": \"1403/6/3\",\n        \"value\": 26857866900\n    },\n    {\n        \"key\": \"1403/6/30\",\n        \"value\": 25655566600\n    },\n    {\n        \"key\": \"1403/6/4\",\n        \"value\": 24750382100\n    },\n    {\n        \"key\": \"1403/6/5\",\n        \"value\": 24281192500\n    },\n    {\n        \"key\": \"1403/6/6\",\n        \"value\": 27289723500\n    },\n    {\n        \"key\": \"1403/6/7\",\n        \"value\": 25352454900\n    },\n    {\n        \"key\": \"1403/6/8\",\n        \"value\": 24704724600\n    },\n    {\n        \"key\": \"1403/6/9\",\n        \"value\": 19992532400\n    },\n    {\n        \"key\": \"1403/7/1\",\n        \"value\": 23911933600\n    },\n    {\n        \"key\": \"1403/7/10\",\n        \"value\": 22627734500\n    },\n    {\n        \"key\": \"1403/7/11\",\n        \"value\": 25718682800\n    },\n    {\n        \"key\": \"1403/7/12\",\n        \"value\": 29741516900\n    },\n    {\n        \"key\": \"1403/7/13\",\n        \"value\": 23224787300\n    },\n    {\n        \"key\": \"1403/7/14\",\n        \"value\": 26672657500\n    },\n    {\n        \"key\": \"1403/7/15\",\n        \"value\": 21231983800\n    },\n    {\n        \"key\": \"1403/7/16\",\n        \"value\": 25423501200\n    },\n    {\n        \"key\": \"1403/7/17\",\n        \"value\": 25426992800\n    },\n    {\n        \"key\": \"1403/7/18\",\n        \"value\": 25217285700\n    },\n    {\n        \"key\": \"1403/7/19\",\n        \"value\": 23658457500\n    },\n    {\n        \"key\": \"1403/7/2\",\n        \"value\": 27003808900\n    },\n    {\n        \"key\": \"1403/7/20\",\n        \"value\": 20713845400\n    },\n    {\n        \"key\": \"1403/7/21\",\n        \"value\": 22740378900\n    },\n    {\n        \"key\": \"1403/7/22\",\n        \"value\": 26032177800\n    },\n    {\n        \"key\": \"1403/7/23\",\n        \"value\": 26845584100\n    },\n    {\n        \"key\": \"1403/7/24\",\n        \"value\": 26162281900\n    },\n    {\n        \"key\": \"1403/7/25\",\n        \"value\": 28738302500\n    },\n    {\n        \"key\": \"1403/7/26\",\n        \"value\": 24389385000\n    },\n    {\n        \"key\": \"1403/7/27\",\n        \"value\": 24640104900\n    },\n    {\n        \"key\": \"1403/7/28\",\n        \"value\": 25899059200\n    },\n    {\n        \"key\": \"1403/7/29\",\n        \"value\": 22676918300\n    },\n    {\n        \"key\": \"1403/7/3\",\n        \"value\": 23202299600\n    },\n    {\n        \"key\": \"1403/7/30\",\n        \"value\": 23306812100\n    },\n    {\n        \"key\": \"1403/7/31\",\n        \"value\": 22165618000\n    },\n    {\n        \"key\": \"1403/7/4\",\n        \"value\": 21854134600\n    },\n    {\n        \"key\": \"1403/7/5\",\n        \"value\": 22445147100\n    },\n    {\n        \"key\": \"1403/7/6\",\n        \"value\": 26004835200\n    },\n    {\n        \"key\": \"1403/7/7\",\n        \"value\": 23487231300\n    },\n    {\n        \"key\": \"1403/7/8\",\n        \"value\": 25763643300\n    },\n    {\n        \"key\": \"1403/7/9\",\n        \"value\": 29201004800\n    },\n    {\n        \"key\": \"1403/8/1\",\n        \"value\": 28304824900\n    },\n    {\n        \"key\": \"1403/8/10\",\n        \"value\": 20490459700\n    },\n    {\n        \"key\": \"1403/8/11\",\n        \"value\": 23377859200\n    },\n    {\n        \"key\": \"1403/8/12\",\n        \"value\": 22462130800\n    },\n    {\n        \"key\": \"1403/8/13\",\n        \"value\": 22769882900\n    },\n    {\n        \"key\": \"1403/8/2\",\n        \"value\": 27494329900\n    },\n    {\n        \"key\": \"1403/8/3\",\n        \"value\": 21863650100\n    },\n    {\n        \"key\": \"1403/8/4\",\n        \"value\": 24416172700\n    },\n    {\n        \"key\": \"1403/8/5\",\n        \"value\": 22582182200\n    },\n    {\n        \"key\": \"1403/8/6\",\n        \"value\": 23743931600\n    },\n    {\n        \"key\": \"1403/8/7\",\n        \"value\": 25419723300\n    },\n    {\n        \"key\": \"1403/8/8\",\n        \"value\": 27664540900\n    },\n    {\n        \"key\": \"1403/8/9\",\n        \"value\": 23895758700\n    }\n]"
+				},
+				{
+					"name": "amount monthly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "amount",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "monthly",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/v2/report",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v2",
+								"report"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:26:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "692"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"key\": \"آبان 1402\",\n        \"value\": 757665943800\n    },\n    {\n        \"key\": \"آبان 1403\",\n        \"value\": 314485446900\n    },\n    {\n        \"key\": \"آذر 1402\",\n        \"value\": 736702490000\n    },\n    {\n        \"key\": \"اردیبهشت 1403\",\n        \"value\": 727561709400\n    },\n    {\n        \"key\": \"اسفند 1402\",\n        \"value\": 763058628200\n    },\n    {\n        \"key\": \"بهمن 1402\",\n        \"value\": 761797440800\n    },\n    {\n        \"key\": \"تیر 1403\",\n        \"value\": 766553163300\n    },\n    {\n        \"key\": \"خرداد 1403\",\n        \"value\": 768442508300\n    },\n    {\n        \"key\": \"دی 1402\",\n        \"value\": 782055566900\n    },\n    {\n        \"key\": \"شهریور 1402\",\n        \"value\": 509623185900\n    },\n    {\n        \"key\": \"شهریور 1403\",\n        \"value\": 733725322600\n    },\n    {\n        \"key\": \"فروردین 1403\",\n        \"value\": 766169091200\n    },\n    {\n        \"key\": \"مرداد 1403\",\n        \"value\": 762546431800\n    },\n    {\n        \"key\": \"مهر 1402\",\n        \"value\": 776964861200\n    },\n    {\n        \"key\": \"مهر 1403\",\n        \"value\": 766128106500\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "send notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "body",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "recipient",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "medium",
+							"value": "sms",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/notif",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"notif"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send notification",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "body",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "recipient",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "medium",
+									"value": "sms",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "63a69a2d18f9347bd89d5f5c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/api/notif",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"notif"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 27 Nov 2024 12:26:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.7"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Notification queued for sending\"\n}"
+				}
+			]
+		}
+	]
+}

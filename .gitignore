@@ -1,0 +1,125 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.coverage
+.coverage.*
+.cache
+*.dump
+
+# Django local settings
+local_settings.py
+
+# SQLite database
+*.sqlite3
+
+# MongoDB
+*.lock
+dump/
+
+# Media files
+media/
+
+# Django static files
+staticfiles/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+
+# mypy
+typings/
+.mypy_cache/
+
+# Celery
+celerybeat-schedule
+
+# Environments
+.env
+.venv
+ENV/
+env.bak/
+venv/
+
+# pipenv
+Pipfile.lock
+
+# Pyre
+.pyre/
+
+# Testing
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+
+# AWS and MinIO
+*.boto
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Log files
+*.log
+
+# Coverage reports
+htmlcov/
+
+# pytest
+.pytest_cache/
+
+# pyenv
+.python-version
+
+# IDE-specific files
+*.sublime*
+*.kate-swp
+
+# Other
+*.bak
+*.swp
+*.tmp
+*.temp
+~*
+logs/
+
+# MongoDB BSON files
+*.bson

@@ -1,0 +1,67 @@
+services:
+  web:
+    build: .
+    command: > 
+      sh -c "
+      python manage.py create_collection_transaction_summary &&
+      python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+      - mongodb
+      - redis
+    env_file:
+      - ./zibal_project/.env
+    restart: on-failure
+
+  redis:
+    image: redis:latest
+    container_name: zibal_project-redis
+    ports:
+      - "6379:6379"
+    restart: on-failure
+
+  mongodb:
+    image: mongo:latest
+    container_name: zibal_project-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./transactions.agz:/docker-entrypoint-initdb.d/transactions.agz
+    environment:
+      MONGO_INITDB_DATABASE: zibal_db
+    restart: on-failure
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15700:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      retries: 5
+    restart: on-failure
+
+  celery_base: &celery_base
+    build: .
+    env_file:
+      - ./zibal_project/.env
+    depends_on:
+      - rabbitmq
+      - mongodb
+    restart: on-failure
+
+  celery:
+    <<: *celery_base
+    command: celery -A zibal_project worker --loglevel=info
+
+  celery_beat:
+    <<: *celery_base
+    command: celery -A zibal_project beat --loglevel=info
+
+volumes:
+  mongo_data:
