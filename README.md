@@ -50,3 +50,5 @@ Set the amount and count grouped by daily, weekly, or monthly intervals for a sp
 
 
 ```
+
+When building the Docker Compose setup, data will be inserted into the transaction collection, and a command(python manage.py create_collection_transaction_summary) will create a second collection called summary_transaction
